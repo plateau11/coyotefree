@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu files -->
+    <string name="Settings">सेटिङ</string>
+    <string name="About">कोयोटबारे</string>
+    <string name="Notepad">नोटप्याड</string>
+    <string name="AiTools">एआई उपकरण</string>
+    <string name="ImageSize">तस्बिर सानो बनाउनुहोस्</string>
+    <string name="Quote">तपाईँको दैनिक उद्धरण</string>
+    <string name="Relax">आराम गर्नुहोस्</string>
+    <string name="Feedback">प्रतिक्रिया पठाउनुहोस्</string>
+    <string name="Support">मद्दत र सहयोग</string>
+    <string name="share">एप साझेदारी गर्नुहोस्</string>
+    <string name="rate">हामीलाई रेट गर्नुहोस्!</string>
+    <string name="exit">बाहिर निस्कनुहोस्</string>
+
+    <string name="PinTitle">पिन हाल्नुहोस्</string>
+
+    <!-- lock page cryto-->
+    <string name="SelectFile">फाइल प्रकार छान्नुहोस्</string>
+    <string name="PhotosVideos">फोटो/भिडियो</string>
+    <string name="Documents">कागजात</string>
+    <string name="Browse">ब्राउज गर्नुहोस्</string>
+    <string name="Lock">लक गर्नुहोस्</string>
+    <string name="ViewLock">लक गरिएका फाइल हेर्नुहोस्</string>
+    <string name="Filename">फाइलको नाम</string>
+    <string name="filenotchosen">फाइल छानिएको छैन</string>
+    <string name="pleasechooseanother">कृपया अर्को फाइल छान्नुहोस्</string>
+    <string name="filealreadyexists">फाइल पहिले नै लकमा छ</string>
+    <string name="exitapp">के तपाईं एप बन्द गर्न चाहनुहुन्छ?</string>
+    <string name="filelocksuccessful">फाइल सफलतापूर्वक लक भयो।</string>
+    <string name="enablenotificationpermission">सेटिङमा गएर सूचना अनुमति सक्रिय गर्नुहोस्</string>
+    <string name="toenablelockpermission">लक गर्न स्टोरेज अनुमति चाहिन्छ।</string>
+    <string name="doyouwantograntthispermission">यो अनुमति दिन चाहनुहुन्छ?</string>
+    <string name="storagepermissionnotgranted">स्टोरेज अनुमति दिइएको छैन।</string>
+    <string name="Sure">पक्का</string>
+    <string name="tocreateaseamlessexperience">सुगम अनुभवका लागि सूचना अनुमति आवश्यक छ।</string>
+    <string name="notificationpermissionnotgranted">सूचना अनुमति दिइएको छैन</string>
+
+    <!--locker page history -->
+    <string name="LockedFiles">लक गरिएका फाइल</string>
+    <string name="Show">देखाउनुहोस्</string>
+    <string name="pdf">पीडीएफ</string>
+    <string name="doc">डक</string>
+    <string name="videos">भिडियो</string>
+    <string name="images">तस्बिर</string>
+    <string name="ppt">पीपीटी</string>
+    <string name="excel">एक्सेल</string>
+    <string name="audio">अडियो</string>
+    <string name="Allfiles">सबै फाइल</string>
+    <string name="unlock">अनलक गर्नुहोस्</string>
+
+    <!--inside setting -->
+    <string name="darkMode">डार्क मोड</string>
+    <string name="ChangePin">पिन परिवर्तन गर्नुहोस्</string>
+    <string name="LockerGridSize">लक ग्रिड आकार</string>
+    <string name="UnlockHistory">अनलक इतिहास</string>
+    <string name="SetLanguage">भाषा छान्नुहोस्</string>
+
+    <!--inside change pin -->
+    <string name="EnterPinAgain">पिन पुन: हाल्नुहोस्</string>
+    <string name="Typedpin">हालिएको पिन: </string>
+    <string name="PinSetSuccessfully">पिन सफलतापूर्वक सेट भयो</string>
+    <string name="Enternewpin">नयाँ पिन हाल्नुहोस्</string>
+    <string name="Enteroldpin">पुरानो पिन हाल्नुहोस्</string>
+    <string name="Enteragain">फेरि हाल्नुहोस्</string>
+    <string name="Passworddonnotmatch">पिन मेल खाएन</string>
+    <string name="pressoktosetnewpin">नयाँ पिन सेट गर्न OK थिच्नुहोस्</string>
+    <string name="reminder">स्मरण</string>
+    <string name="settingANewPinWillErase">नयाँ पिन राख्दा पुराना लक गरिएका फाइल मेटिन्छन्।</string>
+    <string name="ForgotPassword">पासवर्ड बिर्सनुभयो?</string>
+    <string name="DataWipedSuccessfully">डेटा मेटाइयो</string>
+    <string name="ErrorInWipingData">डेटा मेट्दा त्रुटि भयो</string>
+    <string name="Failed">असफल</string>
+
+    <!--inside grid size -->
+    <string name="LockerGridsize">लक ग्रिड आकार</string>
+
+    <!--inside unlock history -->
+    <string name="yourfileunlockhistory">तपाईँको फाइल अनलक इतिहास</string>
+    <string name="doyourreallywantto">अनलक इतिहास मेटाउन चाहनुहुन्छ?</string>
+    <string name="alert">चेतावनी</string>
+    <string name="cancel">रद्द गर्नुहोस्</string>
+    <string name="yes">हो</string>
+    <string name="clear">सफा गर्नुहोस्</string>
+    <string name="filerestoredsuccessfully">फाइल सफलतापूर्वक फिर्ता भयो</string>
+    <string name="itemnotselected">वस्तु छानिएको छैन</string>
+    <string name="Filerestoredat">फाइल फिर्ता भएको स्थान</string>
+
+    <!--set language option -->
+    <string name="ChooseLanguage">भाषा छान्नुहोस्</string>
+    <string name="English">अंग्रेजी</string>
+    <string name="Spanish">स्पेनी</string>
+
+    <!--about page -->
+    <string name="coyotefilelocker">कोयोट फाइल लक</string>
+    <string name="appDescription">यो एपले तपाईंका महत्वपूर्ण फाइल सुरक्षित राख्छ।</string>
+    <string name="version">संस्करण:</string>
+    <string name="madeWithLove">Velocity Labs बाट ♥️ सहित बनाइएको</string>
+
+    <!--Notepad -->
+    <string name="newnote">नयाँ नोट</string>
+    <string name="noteheading">नोटको शीर्षक</string>
+    <string name="notedetails">नोट विवरण</string>
+    <string name="Savenote">नोट सेभ गर्नुहोस्</string>
+    <string name="notesaved">नोट सेभ भयो</string>
+    <string name="areyousure">यो नोट मेटाउन चाहनुहुन्छ?</string>
+    <string name="delete">हटाउनुहोस्</string>
+    <string name="NoteDeleted">नोट हटाइयो</string>
+    <string name="heading">शीर्षक हाल्नुहोस्</string>
+    <string name="savedSuccessfully">नोट सेभ भयो</string>
+    <string name="errorsavingnote">नोट सेभ गर्दा त्रुटि</string>
+    <string name="noteupdated">नोट अपडेट भयो</string>
+    <string name="errorupdating">नोट अपडेट गर्दा त्रुटि</string>
+
+    <!--Ai tools section -->
+    <string name="documentScanner">कागजात स्क्यानर</string>
+    <string name="Scan">स्क्यान गर्नुहोस्</string>
+
+    <!--Image Compressor -->
+    <string name="chooseimage">तस्बिर छान्नुहोस्</string>
+    <string name="Compressimage">तस्बिर कम्प्रेस गर्नुहोस्</string>
+    <string name="Customcompress">कस्टम कम्प्रेस</string>
+    <string name="Actualimage">मूल तस्बिर</string>
+    <string name="CompressedImage">कम्प्रेस गरिएको तस्बिर</string>
+    <string name="Pleasechoose">कृपया तस्बिर छान्नुहोस्</string>
+    <string name="EnterImageDimension">तस्बिरको मापन हाल्नुहोस्</string>
+    <string name="Entersize">आकार हाल्नुहोस्</string>
+    <string name="size">आकार :-</string>
+    <string name="compressedimagesavedin">कम्प्रेस तस्बिर यहाँ सेभ भयो</string>
+    <string name="EnterimageDimension">तस्बिरको मापन हाल्नुहोस्</string>
+    <string name="pleaseentervalid">कृपया चौडाइ, उचाइ र आकार सही हाल्नुहोस्</string>
+    <string name="pleaseentervalidsecond">कृपया चौडाइ र उचाइ सही हाल्नुहोस्</string>
+    <string name="pleaseentervalid3">कृपया मान्य आकार हाल्नुहोस्</string>
+    <string name="failedtoopen">तस्बिर खोल्न सकिएन!</string>
+    <string name="failedtoread">तस्बिर जानकारी पढ्न सकिएन!</string>
+    <string name="failetoclear">क्यास खाली गर्न सकिएन</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">उद्धरण ल्याउन असफल</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">तपाईँको प्रतिक्रिया</string>
+    <string name="Subject">विषय:</string>
+    <string name="EnterSubject">विषय हाल्नुहोस्</string>
+    <string name="Body">सन्देश:</string>
+    <string name="Emailbody">इमेलको सामग्री लेख्नुहोस्</string>
+    <string name="Send">पठाउनुहोस्</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">मद्दत र सहयोग</string>
+    <string name="q1">१. नयाँ पिन कसरी सेट गर्ने?</string>
+    <string name="q2">२. लकमा राखिएका फाइल फिर्ता गर्न सकिन्छ?</string>
+    <string name="q3">३. मेरा डेटा सुरक्षित छन्?</string>
+    <string name="q4">४. कुन-कुन फाइल प्रकार सपोर्ट हुन्छ?</string>
+    <string name="q5">५. लकमा राखिएका फाइल कसरी हटाउने?</string>
+    <string name="q6">६. पिन बिर्सिए के गर्ने?</string>
+    <string name="q1answer">नयाँ पिन राख्न साइड मेनु खोली सेटिङमा जानुहोस्।</string>
+    <string name="q2answer">हो, वस्तु लामो समय थिच्दा फिर्ता गर्ने विकल्प आउँछ।</string>
+    <string name="q3answer">तपाईँको पिन बिना अरूले फाइल हेर्न सक्दैनन्।</string>
+    <string name="q4answer">कोयोट फाइल लक jpg, png, pdf, doc, excel आदि सपोर्ट गर्छ।</string>
+    <string name="q5answer">फाइल लामो समय थिच्दा डिलिट विकल्प देखिन्छ।</string>
+    <string name="q6answer">४ पटक प्रयास गरेपछि नयाँ पिन सेट गर्ने डायलग आउँछ।</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">कोयोट फाइल लक डाउनलोड गर्नुहोस्!</string>
+    <string name="checkitout">हेर्नुहोस्:</string>
+</resources>

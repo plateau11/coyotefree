@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menü öğeleri -->
+    <string name="Settings">Ayarlar</string>
+    <string name="About">Coyote Hakkında</string>
+    <string name="Notepad">Not Defteri</string>
+    <string name="AiTools">Yapay Zeka Araçları</string>
+    <string name="ImageSize">Görüntü Boyutunu Küçült</string>
+    <string name="Quote">Günün Sözü</string>
+    <string name="Relax">Rahatla ve tadını çıkar</string>
+    <string name="Feedback">Geri Bildirim Gönder</string>
+    <string name="Support">Yardım ve Destek</string>
+    <string name="share">Uygulamayı Paylaş</string>
+    <string name="rate">Bizi Değerlendir!</string>
+    <string name="exit">Çıkış</string>
+
+    <string name="PinTitle">PIN girin</string>
+
+    <!-- Kilitleme sayfası -->
+    <string name="SelectFile">Dosya türü seçin</string>
+    <string name="PhotosVideos">Fotoğraflar / Videolar</string>
+    <string name="Documents">Belgeler</string>
+    <string name="Browse">Gözat</string>
+    <string name="Lock">Kilitle</string>
+    <string name="ViewLock">Kilidi Görüntüle</string>
+    <string name="Filename">Dosya adı</string>
+    <string name="filenotchosen">Dosya seçilmedi</string>
+    <string name="pleasechooseanother">Lütfen başka bir dosya seçin</string>
+    <string name="filealreadyexists">Dosya zaten kilit alanında mevcut</string>
+    <string name="exitapp">Uygulamadan çıkılsın mı?</string>
+    <string name="filelocksuccessful">Dosya başarıyla kilitlendi.</string>
+    <string name="enablenotificationpermission">Ayarlar\'dan bildirim izinlerini etkinleştirin</string>
+    <string name="toenablelockpermission">Kilitleme işlemi için depolama izni gerekiyor.</string>
+    <string name="doyouwantograntthispermission">Bu izni vermek istiyor musunuz?</string>
+    <string name="storagepermissionnotgranted">Depolama izni verilmedi.</string>
+    <string name="Sure">Evet</string>
+    <string name="tocreateaseamlessexperience">Sorunsuz bir deneyim için bildirim izni gereklidir.</string>
+    <string name="notificationpermissionnotgranted">Bildirim izni verilmedi.</string>
+
+    <!-- Kilit geçmişi -->
+    <string name="LockedFiles">Kilitlenen dosyalar</string>
+    <string name="Show">Göster</string>
+    <string name="pdf">PDF</string>
+    <string name="doc">DOC</string>
+    <string name="videos">Videolar</string>
+    <string name="images">Resimler</string>
+    <string name="ppt">PPT</string>
+    <string name="excel">Excel</string>
+    <string name="audio">Ses</string>
+    <string name="Allfiles">Tüm dosyalar</string>
+    <string name="unlock">Kilit aç</string>
+
+    <!-- Ayarlar -->
+    <string name="darkMode">Karanlık mod</string>
+    <string name="ChangePin">PIN değiştir</string>
+    <string name="LockerGridSize">Kilitleme ızgara boyutu</string>
+    <string name="UnlockHistory">Kilit açma geçmişi</string>
+    <string name="SetLanguage">Dil ayarı</string>
+
+    <!-- PIN değiştirme -->
+    <string name="EnterPinAgain">PIN’i yeniden girin</string>
+    <string name="Typedpin">Girilen PIN: </string>
+    <string name="PinSetSuccessfully">PIN başarıyla ayarlandı</string>
+    <string name="Enternewpin">Yeni PIN girin</string>
+    <string name="Enteroldpin">Eski PIN’i girin</string>
+    <string name="Enteragain">Tekrar girin</string>
+    <string name="Passworddonnotmatch">Parolalar eşleşmiyor</string>
+    <string name="pressoktosetnewpin">Yeni PIN’i ayarlamak için TAMAM’a basın</string>
+    <string name="reminder">Hatırlatıcı</string>
+    <string name="settingANewPinWillErase">Yeni PIN ayarlamak, kilitli dosyaları silecektir.</string>
+    <string name="ForgotPassword">PIN’i unuttunuz mu?</string>
+    <string name="DataWipedSuccessfully">Veriler başarıyla silindi</string>
+    <string name="ErrorInWipingData">Veri silme hatası</string>
+    <string name="Failed">Başarısız</string>
+
+    <!-- Izgara boyutu -->
+    <string name="LockerGridsize">Izgara boyutu</string>
+
+    <!-- Kilit açma geçmişi -->
+    <string name="yourfileunlockhistory">Dosya kilit açma geçmişiniz</string>
+    <string name="doyourreallywantto">Geçmişi silmek istediğinizden emin misiniz?</string>
+    <string name="alert">Uyarı</string>
+    <string name="cancel">İptal</string>
+    <string name="yes">Evet</string>
+    <string name="clear">Temizle</string>
+    <string name="filerestoredsuccessfully">Dosya başarıyla geri yüklendi</string>
+    <string name="itemnotselected">Öğe seçilmedi</string>
+    <string name="Filerestoredat">Dosya şu konuma geri yüklendi:</string>
+
+    <!-- Dil seçeneği -->
+    <string name="ChooseLanguage">Dil seçin</string>
+    <string name="English">İngilizce</string>
+    <string name="Spanish">İspanyolca</string>
+
+    <!-- Hakkında sayfası -->
+    <string name="coyotefilelocker">Coyote Dosya Kilidi</string>
+    <string name="appDescription">Bu uygulama önemli dosyalarınızı başkalarından korumanıza yardımcı olur.</string>
+    <string name="version">Versiyon:</string>
+    <string name="madeWithLove">Velocity Labs tarafından ❤️ ile yapıldı</string>
+
+    <!-- Not Defteri -->
+    <string name="newnote">Yeni not</string>
+    <string name="noteheading">Not başlığı</string>
+    <string name="notedetails">Not detayları</string>
+    <string name="Savenote">Notu kaydet</string>
+    <string name="notesaved">Not başarıyla kaydedildi</string>
+    <string name="areyousure">Bu notu silmek istediğinizden emin misiniz?</string>
+    <string name="delete">Sil</string>
+    <string name="NoteDeleted">Not silindi</string>
+    <string name="heading">Lütfen başlık girin</string>
+    <string name="savedSuccessfully">Başarıyla kaydedildi</string>
+    <string name="errorsavingnote">Not kaydedilirken hata oluştu</string>
+    <string name="noteupdated">Not güncellendi</string>
+    <string name="errorupdating">Güncellenirken hata oluştu</string>
+
+    <!-- AI araçları bölümü -->
+    <string name="documentScanner">Belge Tarayıcı</string>
+    <string name="Scan">Tara</string>
+
+    <!-- Görüntü sıkıştırıcı -->
+    <string name="chooseimage">Resim seç</string>
+    <string name="Compressimage">Resmi sıkıştır</string>
+    <string name="Customcompress">Özel sıkıştırma</string>
+    <string name="Actualimage">Orijinal resim</string>
+    <string name="CompressedImage">Sıkıştırılmış resim</string>
+    <string name="Pleasechoose">Lütfen bir resim seçin</string>
+    <string name="EnterImageDimension">Resim boyutlarını girin</string>
+    <string name="Entersize">Boyut girin</string>
+    <string name="size">Boyut: -</string>
+    <string name="compressedimagesavedin">Sıkıştırılmış resim kaydedildi:</string>
+    <string name="EnterimageDimension">Resim boyutlarını girin</string>
+    <string name="pleaseentervalid">Geçerli genişlik, yükseklik ve boyut girin</string>
+    <string name="pleaseentervalidsecond">Geçerli genişlik ve yükseklik girin</string>
+    <string name="pleaseentervalid3">Geçerli bir boyut girin</string>
+    <string name="failedtoopen">Resim açılamıyor!</string>
+    <string name="failedtoread">Resim bilgisi okunamıyor!</string>
+    <string name="failetoclear">Önbellek temizlenemedi</string>
+
+    <!-- Sözler bölümü -->
+    <string name="failedtofetch">Söz alınamadı</string>
+
+    <!-- Geri bildirim bölümü -->
+    <string name="yourfeedback">Geri bildiriminiz</string>
+    <string name="Subject">Konu:</string>
+    <string name="EnterSubject">Konu girin</string>
+    <string name="Body">Metin:</string>
+    <string name="Emailbody">E-posta metni girin</string>
+    <string name="Send">Gönder</string>
+
+    <!-- Yardım & Destek -->
+    <string name="helpandsupport">Yardım &amp; Destek</string>
+    <string name="q1">1. Yeni bir PIN nasıl ayarlanır?</string>
+    <string name="q2">2. Kilitli dosyalar orijinal konumuna geri yüklenebilir mi?</string>
+    <string name="q3">3. Verilerim kilitte güvende mi?</string>
+    <string name="q4">4. Kilit hangi dosya türlerini destekliyor?</string>
+    <string name="q5">5. Kilitli dosyalar nasıl silinir?</string>
+    <string name="q6">6. PIN’i unutursem ne olur?</string>
+    <string name="q1answer">Yeni PIN ayarlamak için yan menüden Ayarlar’ı açın.</string>
+    <string name="q2answer">Evet, bir öğeye uzun basarak geri yükle seçeneğiyle orijinal konumuna döndürebilirsiniz.</string>
+    <string name="q3answer">PIN’inizi bilmeyen diğer uygulamalar veya kullanıcılar kilitli verilerinize erişemez.</string>
+    <string name="q4answer">Coyote Dosya Kilidi, jpg, png, pdf, doc, excel gibi birçok dosya türünü destekler.</string>
+    <string name="q5answer">Silmek istediğiniz öğeye uzun basın, sil simgesi görünür ve dosya kilitten kaldırılır.</string>
+    <string name="q6answer">PIN’i 4 kez yanlış girerseniz, yeni PIN ayarlamanıza izin veren bir pencere açılır.</string>
+
+    <!-- Uygulamayı paylaş -->
+    <string name="downloadcoyote">Coyote Dosya Kilidi’ni indir!</string>
+    <string name="checkitout">Göz atmak için bakın:</string>
+
+</resources>

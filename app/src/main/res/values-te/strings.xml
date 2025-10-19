@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">సెట్టింగ్స్</string>
+    <string name="About">కోయోట్ గురించి</string>
+    <string name="Notepad">నోట్ప్యాడ్</string>
+    <string name="AiTools">ఏఐ టూల్స్</string>
+    <string name="ImageSize">చిత్ర పరిమాణం తగ్గించు</string>
+    <string name="Quote">మీ దైనందిన కోటేషన్</string>
+    <string name="Relax">విశ్రాంతి తీసుకోండి</string>
+    <string name="Feedback">అభిప్రాయం పంపండి</string>
+    <string name="Support">సహాయం &amp; మద్దతు</string>
+    <string name="share">యాప్ పంచుకోండి</string>
+    <string name="rate">రేటింగ్ ఇవ్వండి!</string>
+    <string name="exit">నిష్క్రమణ</string>
+
+    <string name="PinTitle">పిన్ ఎంటర్ చేయండి</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">ఫైల్ రకం ఎంచుకోండి</string>
+    <string name="PhotosVideos">ఫోటోలు/వీడియోలు</string>
+    <string name="Documents">డాక్యుమెంట్‌లు</string>
+    <string name="Browse">బ్రౌజ్</string>
+    <string name="Lock">తాళం</string>
+    <string name="ViewLock">తాళాకృత ఫైళ్లను చూడండి</string>
+    <string name="Filename">ఫైల్ పేరు</string>
+    <string name="filenotchosen">ఫైల్ ఎంచుకోబడలేదు</string>
+    <string name="pleasechooseanother">దయచేసి మరో ఫైల్ ఎంచుకోండి</string>
+    <string name="filealreadyexists">ఫైల్ ఇప్పటికే లాక్కర్‌లో ఉంది</string>
+    <string name="exitapp">యాప్ నుండి బయటకు వెళ్లనా?</string>
+    <string name="filelocksuccessful">ఫైల్ విజయవంతంగా లాక్క్ చేయబడింది.</string>
+    <string name="enablenotificationpermission">సెట్టింగ్స్‌లో నోటిఫికేషన్ అనుమతి ఇచ్చండి</string>
+    <string name="toenablelockpermission">లాకింగ్ ఆపరేషన్ కోసం స్టోరేజ్ అనుమతి కావాలి.</string>
+    <string name="doyouwantograntthispermission">ఈ అనుమతిని ఇవ్వాలా?</string>
+    <string name="storagepermissionnotgranted">స్టోరేజ్ అనుమతి ఇవ్వబడలేదు.</string>
+    <string name="Sure">ఖచ్చితంగా</string>
+    <string name="tocreateaseamlessexperience">సజావుగా పనికిరావటానికి నోటిఫికేషన్ అనుమతి కావాలి.</string>
+    <string name="notificationpermissionnotgranted">నోటిఫికేషన్ అనుమతి ఇవ్వలేదు</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">లాక్ చేసిన ఫైళ్లు</string>
+    <string name="Show">ప్రదర్శించు</string>
+    <string name="pdf">PDF</string>
+    <string name="doc">DOC</string>
+    <string name="videos">వీడియోలు</string>
+    <string name="images">చిత్రాలు</string>
+    <string name="ppt">PPT</string>
+    <string name="excel">Excel</string>
+    <string name="audio">ఆడియో</string>
+    <string name="Allfiles">అన్ని ఫైళ్లు</string>
+    <string name="unlock">అన్‌లాక్ చేయు</string>
+
+    <!-- inside setting -->
+    <string name="darkMode">డార్క్ మోడ్</string>
+    <string name="ChangePin">పిన్ మార్చు</string>
+    <string name="LockerGridSize">లాక్కర్ గ్రిడ్ పరిమాణం</string>
+    <string name="UnlockHistory">అన్‌లాక్ చరిత్ర</string>
+    <string name="SetLanguage">భాష సెట్ చేయండి</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">తర్వాత పిన్ మళ్లీ నమోదు చేయండి</string>
+    <string name="Typedpin">నమోదు చేసిన పిన్: </string>
+    <string name="PinSetSuccessfully">పిన్ విజయవంతంగా సెట్ చేయబడింది</string>
+    <string name="Enternewpin">కొత్త పిన్ నమోదు చేయండి</string>
+    <string name="Enteroldpin">పాత పిన్ నమోదు చేయండి</string>
+    <string name="Enteragain">మళ్లీ నమోదు చేయండి</string>
+    <string name="Passworddonnotmatch">పాస్వర్డ్‌లు సరిపోలడం లేదు</string>
+    <string name="pressoktosetnewpin">ఓకే క్లిక్ చేసి కొత్త పిన్ సెట్ చేయండి</string>
+    <string name="reminder">గమనిక</string>
+    <string name="settingANewPinWillErase">క్రొత్త పిన్ సెట్ చేస్తే లాక్ చేసిన ఫైళ్లు మాయవుతాయి.</string>
+    <string name="ForgotPassword">పిన్ మర్చిపోయారా?</string>
+    <string name="DataWipedSuccessfully">డేటా విజయవంతంగా తొలగించబడింది</string>
+    <string name="ErrorInWipingData">డేటా తొలగించే లోపం</string>
+    <string name="Failed">విఫలం</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">లాక్కర్ గ్రిడ్ పరిమాణం</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">మీ ఫైల్ అన్‌లాక్ చేయించిన చరిత్ర</string>
+    <string name="doyourreallywantto">నిజంగా ఈ చరిత్రను మాయ చేయాలా?</string>
+    <string name="alert">హెచ్చరిక</string>
+    <string name="cancel">రద్దు</string>
+    <string name="yes">అవును</string>
+    <string name="clear">తొలగించు</string>
+    <string name="filerestoredsuccessfully">ఫైల్ విజయవంతంగా పునఃస్థాపించబడింది</string>
+    <string name="itemnotselected">ఐటెం ఎంచుకోబడలేదు</string>
+    <string name="Filerestoredat">ఫైల్ పునఃస్థాపించబడినది</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">భాషను ఎంచుకోండి</string>
+    <string name="English">ఇంగ్లీష్</string>
+    <string name="Spanish">స్పానిష్</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">కోయోట్ ఫైల్ లాక్కర్</string>
+    <string name="appDescription">ఈ యాప్ మీ ముఖ్యమైన ఫైళ్లను ఇతరుల నుండి రక్షించడానికి సహాయపడుతుంది.</string>
+    <string name="version">ఆవૃત్తి:</string>
+    <string name="madeWithLove">❤️తో రూపొందించబడినది – వేలోసిటీ ల్యాబ్స్</string>
+
+    <!-- Notepad -->
+    <string name="newnote">కొత్త నోట్</string>
+    <string name="noteheading">నోట్ల శీర్షిక</string>
+    <string name="notedetails">నోట్ల వివరాలు</string>
+    <string name="Savenote">నోట్ సేవ్ చేయు</string>
+    <string name="notesaved">నోట్ విజయవంతంగా సేవ్ చేయబడింది</string>
+    <string name="areyousure">ఈ నోట్ నిజంగా తొలగించాలా?</string>
+    <string name="delete">తొలగించు</string>
+    <string name="NoteDeleted">నోట్ తొలగించబడింది</string>
+    <string name="heading">దయచేసి శీర్షిక నమోదు చేయండి</string>
+    <string name="savedSuccessfully">విజయవంతంగా సేవ్ చేయబడింది</string>
+    <string name="errorsavingnote">నోట్ సేవ్ చేయడంలో లోపం</string>
+    <string name="noteupdated">నోట్ విజయవంతంగా నవీకరించబడింది</string>
+    <string name="errorupdating">నవీకరించడంలో లోపం</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">డాక్యుమెంట్ స్కానర్</string>
+    <string name="Scan">స్కాన్ చేయి</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">చిత్రం ఎంచుకోండి</string>
+    <string name="Compressimage">చిత్రాన్ని కమ్రెస్ చేయు</string>
+    <string name="Customcompress">రచనాత్మక కమ్రెస్</string>
+    <string name="Actualimage">మూల చిత్రాలు</string>
+    <string name="CompressedImage">కమ్రెస్ చేసిన చిత్రం</string>
+    <string name="Pleasechoose">దయచేసి చిత్రం ఎంచుకోండి</string>
+    <string name="EnterImageDimension">చిత్ర పరిమాణం నమోదు చేయండి</string>
+    <string name="Entersize">పరిమాణం నమోదు చేయండి</string>
+    <string name="size">పరిమాణం : -</string>
+    <string name="compressedimagesavedin">కమ్రెస్ చేసిన చిత్రం ఇక్కడ సేవ్ చేయబడింది</string>
+    <string name="EnterimageDimension">చిత్ర పరిమాణాలు నమోదు చేయండి</string>
+    <string name="pleaseentervalid">దయచేసి సరైన వెడల్పు, ఎత్తు మరియు పరిమాణం నమోదు చేయండి</string>
+    <string name="pleaseentervalidsecond">దయచేసి సరైన వెడల్పు &amp; ఎత్తు నమోదు చేయండి</string>
+    <string name="pleaseentervalid3">దయచేసి సరైన పరిమాణం నమోదు చేయండి</string>
+    <string name="failedtoopen">చిత్రాన్ని తెరవలేని లోపం!</string>
+    <string name="failedtoread">చిత్ర సమాచారం చదవలేని లోపం!</string>
+    <string name="failetoclear">క్యాష్ తొలగించలేని లోపం</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">కోటేషన్ పొందడంలో లోపం</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">మీ అభిప్రాయం</string>
+    <string name="Subject">విషయం:</string>
+    <string name="EnterSubject">విషయం నమోదు చేయండి</string>
+    <string name="Body">బాడీ:</string>
+    <string name="Emailbody">ఇమెయిల్ బాడీ వ్రాయండి</string>
+    <string name="Send">పంపండి</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">సహాయం &amp; మద్దతు</string>
+    <string name="q1">1. కొత్త పిన్ ఎలా సెట్ చేయాలి?</string>
+    <string name="q2">2. లాక్కర్ ఫైళ్లను తిరిగి సాధారణ స్థలానికి పునఃస్థాపించవచ్చా?</string>
+    <string name="q3">3. నా డేటా సురక్షితమా?</string>
+    <string name="q4">4. లాక్కర్ ఏ రకాల ఫైళ్లు మద్దతు ఇస్తుంది?</string>
+    <string name="q5">5. లాక్కర్ నుండి ఫైళ్లు ఎలా తీసివేయాలి?</string>
+    <string name="q6">6. పిన్ మర్చిపోయిన సందర్భంలో ఏం జరుగుతుంది?</string>
+    <string name="q1answer">కొత్త పిన్ సెట్ చేయడానికి, నావిగేషన్ మెనులో సెట్టింగ్స్ క్లిక్ చేయండి.</string>
+    <string name="q2answer">అవును, ఫైల్ మెनుపై ఎక్కువసేపు నొక్కితే “రెస్టోర్” ఆప్షన్ ఇవ్వబడుతుంది.</string>
+    <string name="q3answer">పిన్ లేకుండా ఇతర యాప్స్ &amp; యూజర్లు ఫైల్‌లను 접근ించలేరు.</string>
+    <string name="q4answer">కోయోట్ ఫైల్ లాక్కర్ jpg, png, pdf, doc, excel వంటి ఫైళ్ళను మద్దతు ఇస్తుంది.</string>
+    <string name="q5answer">తీసేయాలసిన ఫైల్ పై ఎక్కువసేపు నొక్కి “డిలీట్” ఐకాన్ ఎంచుకోండి.</string>
+    <string name="q6answer">4 సారి ప్రయత్నించిన తర్వాత కొత్త పిన్ సెట్ చేసే డైలాగ్ చూపిస్తుంది.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">కోయోట్ ఫైల్ లాక్కర్ డౌన్‌లోడ్ చేయండి!</string>
+    <string name="checkitout">ఇది చూసి చూడండి:</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/option3"
+        android:orderInCategory="2"
+        android:title="Remove items"
+        android:icon="@mipmap/delete7_foreground"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/option6"
+        android:orderInCategory="1"
+        android:title="@string/unlock"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/option5"
+        android:orderInCategory="1"
+        android:title="Cancel"
+        android:icon="@mipmap/cancel_foreground"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/option4"
+        android:orderInCategory="1"
+        android:title="Select all"
+        android:icon="@mipmap/selectall_foreground"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/option1"
+        android:orderInCategory="3"
+        android:title="Bluetooth"
+        android:icon="@drawable/funnel17"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+    <!--
+    <item
+        android:id="@+id/option2"
+        android:orderInCategory="4"
+        android:title="Sort A-Z"
+        />
+    -->
+</menu>

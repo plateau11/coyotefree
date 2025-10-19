@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">Налаштування</string>
+    <string name="About">Про Coyote</string>
+    <string name="Notepad">Нотатник</string>
+    <string name="AiTools">Інструменти ШІ</string>
+    <string name="ImageSize">Стиснути зображення</string>
+    <string name="Quote">Твоя щоденна цитата</string>
+    <string name="Relax">Розслабся та насолоджуйся</string>
+    <string name="Feedback">Надіслати відгук</string>
+    <string name="Support">Допомога та підтримка</string>
+    <string name="share">Поділитися застосунком</string>
+    <string name="rate">Оцініть нас!</string>
+    <string name="exit">Вихід</string>
+
+    <string name="PinTitle">Введіть PIN-код</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">Виберіть тип файлу</string>
+    <string name="PhotosVideos">Фото/Відео</string>
+    <string name="Documents">Документи</string>
+    <string name="Browse">Огляд</string>
+    <string name="Lock">Заблокувати</string>
+    <string name="ViewLock">Перегляд заблокованих файлів</string>
+    <string name="Filename">Ім’я файлу</string>
+    <string name="filenotchosen">Файл не вибрано</string>
+    <string name="pleasechooseanother">Будь ласка, виберіть інший файл</string>
+    <string name="filealreadyexists">Файл уже існує у сховищі</string>
+    <string name="exitapp">Ви дійсно хочете вийти із застосунку?</string>
+    <string name="filelocksuccessful">Файл успішно заблоковано.</string>
+    <string name="enablenotificationpermission">Дозвольте сповіщення у налаштуваннях</string>
+    <string name="toenablelockpermission">Для блокування потрібен дозвіл на доступ до сховища.</string>
+    <string name="doyouwantograntthispermission">Надати цей дозвіл?</string>
+    <string name="storagepermissionnotgranted">Дозвіл на сховище не надано.</string>
+    <string name="Sure">Звичайно</string>
+    <string name="tocreateaseamlessexperience">Для коректної роботи потрібен дозвіл на сповіщення.</string>
+    <string name="notificationpermissionnotgranted">Дозвіл на сповіщення не надано</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">Заблоковані файли</string>
+    <string name="Show">Показати</string>
+    <string name="pdf">pdf</string>
+    <string name="doc">doc</string>
+    <string name="videos">Відео</string>
+    <string name="images">Зображення</string>
+    <string name="ppt">ppt</string>
+    <string name="excel">excel</string>
+    <string name="audio">Аудіо</string>
+    <string name="Allfiles">Усі файли</string>
+    <string name="unlock">Розблокувати</string>
+
+    <!-- inside settings -->
+    <string name="darkMode">Темний режим</string>
+    <string name="ChangePin">Змінити PIN-код</string>
+    <string name="LockerGridSize">Розмір сітки сховища</string>
+    <string name="UnlockHistory">Історія розблокувань</string>
+    <string name="SetLanguage">Вибрати мову</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">Введіть PIN-код ще раз</string>
+    <string name="Typedpin">Введений PIN: </string>
+    <string name="PinSetSuccessfully">PIN успішно встановлено</string>
+    <string name="Enternewpin">Введіть новий PIN</string>
+    <string name="Enteroldpin">Введіть старий PIN</string>
+    <string name="Enteragain">Введіть ще раз</string>
+    <string name="Passworddonnotmatch">PIN-коди не збігаються</string>
+    <string name="pressoktosetnewpin">Натисніть OK, щоб встановити новий PIN</string>
+    <string name="reminder">Нагадування</string>
+    <string name="settingANewPinWillErase">Установка нового PIN видалить усі файли зі сховища.</string>
+    <string name="ForgotPassword">Забули пароль?</string>
+    <string name="DataWipedSuccessfully">Дані успішно видалено</string>
+    <string name="ErrorInWipingData">Помилка при видаленні даних</string>
+    <string name="Failed">Не вдалося</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">Розмір сітки сховища</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">Історія розблокування файлів</string>
+    <string name="doyourreallywantto">Ви дійсно хочете очистити історію розблокувань?</string>
+    <string name="alert">Увага</string>
+    <string name="cancel">Скасувати</string>
+    <string name="yes">Так</string>
+    <string name="clear">Очистити</string>
+    <string name="filerestoredsuccessfully">Файл успішно відновлено</string>
+    <string name="itemnotselected">Елемент не вибрано</string>
+    <string name="Filerestoredat">Файл відновлено у</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">Виберіть мову</string>
+    <string name="English">Англійська</string>
+    <string name="Spanish">Іспанська</string>
+    <string name="Arabic">Арабська</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">Файлове сховище Coyote</string>
+    <string name="appDescription">Цей застосунок допомагає захистити ваші важливі файли від сторонніх осіб.</string>
+    <string name="version">Версія:</string>
+    <string name="madeWithLove">Зроблено з любов’ю у Velocity Labs ❤️</string>
+
+    <!-- Notepad -->
+    <string name="newnote">Нова нотатка</string>
+    <string name="noteheading">Заголовок нотатки</string>
+    <string name="notedetails">Деталі нотатки</string>
+    <string name="Savenote">Зберегти нотатку</string>
+    <string name="notesaved">Нотатку успішно збережено</string>
+    <string name="areyousure">Ви впевнені, що хочете видалити цю нотатку?</string>
+    <string name="delete">Видалити</string>
+    <string name="NoteDeleted">Нотатку видалено</string>
+    <string name="heading">Будь ласка, введіть заголовок</string>
+    <string name="savedSuccessfully">Успішно збережено</string>
+    <string name="errorsavingnote">Помилка під час збереження нотатки</string>
+    <string name="noteupdated">Нотатку успішно оновлено</string>
+    <string name="errorupdating">Помилка під час оновлення</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">Сканер документів</string>
+    <string name="Scan">Сканувати</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">Виберіть зображення</string>
+    <string name="Compressimage">Стиснути зображення</string>
+    <string name="Customcompress">Користувацьке стиснення</string>
+    <string name="Actualimage">Оригінальне зображення</string>
+    <string name="CompressedImage">Стиснене зображення</string>
+    <string name="Pleasechoose">Будь ласка, виберіть зображення</string>
+    <string name="EnterImageDimension">Введіть розміри зображення</string>
+    <string name="Entersize">Введіть розмір</string>
+    <string name="size">Розмір:</string>
+    <string name="compressedimagesavedin">Стиснене зображення збережено в</string>
+    <string name="EnterimageDimension">Введіть розміри зображення</string>
+    <string name="pleaseentervalid">Введіть допустимі значення ширини, висоти та розміру</string>
+    <string name="pleaseentervalidsecond">Введіть коректну ширину та висоту</string>
+    <string name="pleaseentervalid3">Введіть коректний розмір</string>
+    <string name="failedtoopen">Не вдалося відкрити зображення!</string>
+    <string name="failedtoread">Не вдалося прочитати дані зображення!</string>
+    <string name="failetoclear">Не вдалося очистити кеш!</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">Помилка при отриманні цитати</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">Ваш відгук</string>
+    <string name="Subject">Тема:</string>
+    <string name="EnterSubject">Введіть тему</string>
+    <string name="Body">Повідомлення:</string>
+    <string name="Emailbody">Введіть текст повідомлення</string>
+    <string name="Send">Надіслати</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">Допомога та підтримка</string>
+    <string name="q1">1. Як встановити новий PIN-код?</string>
+    <string name="q2">2. Чи можу я відновити файли у вихідне місце?</string>
+    <string name="q3">3. Чи безпечні мої дані у сховищі?</string>
+    <string name="q4">4. Які типи файлів підтримуються?</string>
+    <string name="q5">5. Як видалити файли зі сховища?</string>
+    <string name="q6">6. Що робити, якщо я забув PIN?</string>
+    <string name="q1answer">Щоб встановити новий PIN, відкрийте бічне меню та виберіть «Налаштування».</string>
+    <string name="q2answer">Так, ви можете відновити файли, утримуючи елемент — з’явиться опція відновлення.</string>
+    <string name="q3answer">Ваші дані захищені від інших застосунків та користувачів без PIN-коду.</string>
+    <string name="q4answer">Coyote підтримує формати jpg, png, pdf, doc, excel та інші.</string>
+    <string name="q5answer">Утримуйте елемент, який хочете видалити, потім натисніть іконку видалення.</string>
+    <string name="q6answer">Спробуйте ввести PIN не менше 4 разів — з’явиться вікно скидання PIN.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">Завантажте Coyote File Locker!</string>
+    <string name="checkitout">Спробуйте зараз:</string>
+
+</resources>

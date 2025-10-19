@@ -1,0 +1,104 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.coyotefree'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "velocity.labs.coyotefree"
+        minSdk 26
+        targetSdk 35
+        versionCode 4
+        versionName "1.1.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    //for language change support in play update
+    bundle {
+
+        language {
+            enableSplit = false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.navigation.ui
+    implementation project(':documents-reader-lib')
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'com.google.android.exoplayer:exoplayer:2.17.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.5'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.5'
+    implementation 'com.github.HBiSoft:PickiT:2.0.5'
+    implementation('io.socket:socket.io-client:2.1.1'){
+        exclude group: 'org.json',module: 'json'
+    }
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0' // Required for Socket.IO
+    // Other dependencies
+
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'  // For DOCX handling
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'  //ppt handling
+    implementation 'com.itextpdf:itext7-core:7.2.3'  //for pdf generation
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.0"
+    implementation project(':documents-reader-lib')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation files('libs/passcodeview-2.0.0.aar')
+    implementation 'com.github.yuriy-budiyev:circular-progress-bar:1.2.3'
+    //glide library
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
+
+    implementation platform('com.google.firebase:firebase-bom:33.11.0')
+
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // This dependency is downloaded from the Google's Maven repository.
+    // So, make sure you also include that repository in your project's build.gradle file.
+    implementation 'com.google.android.play:app-update:2.1.0'
+
+    implementation 'com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1'
+
+    //implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.3'
+
+    implementation 'com.google.android.play:review:2.0.2'
+
+    implementation 'id.zelory:compressor:3.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.23"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+
+    implementation 'com.github.plateau11:android-pdf-viewer-fixed:v1.0.12-fixed'
+
+    implementation 'com.android.billingclient:billing:8.0.0'
+
+}

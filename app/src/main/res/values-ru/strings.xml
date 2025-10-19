@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">Настройки</string>
+    <string name="About">О Coyote</string>
+    <string name="Notepad">Блокнот</string>
+    <string name="AiTools">Инструменты ИИ</string>
+    <string name="ImageSize">Сжать изображение</string>
+    <string name="Quote">Твоя ежедневная цитата</string>
+    <string name="Relax">Расслабься и наслаждайся</string>
+    <string name="Feedback">Отправить отзыв</string>
+    <string name="Support">Помощь и поддержка</string>
+    <string name="share">Поделиться приложением</string>
+    <string name="rate">Оцените нас!</string>
+    <string name="exit">Выход</string>
+
+    <string name="PinTitle">Введите PIN-код</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">Выберите тип файла</string>
+    <string name="PhotosVideos">Фото/Видео</string>
+    <string name="Documents">Документы</string>
+    <string name="Browse">Обзор</string>
+    <string name="Lock">Заблокировать</string>
+    <string name="ViewLock">Просмотр заблокированных файлов</string>
+    <string name="Filename">Имя файла</string>
+    <string name="filenotchosen">Файл не выбран</string>
+    <string name="pleasechooseanother">Пожалуйста, выберите другой файл</string>
+    <string name="filealreadyexists">Файл уже существует в хранилище</string>
+    <string name="exitapp">Вы действительно хотите выйти из приложения?</string>
+    <string name="filelocksuccessful">Файл успешно заблокирован.</string>
+    <string name="enablenotificationpermission">Разрешите уведомления в настройках</string>
+    <string name="toenablelockpermission">Для блокировки требуется разрешение на доступ к хранилищу.</string>
+    <string name="doyouwantograntthispermission">Вы хотите предоставить это разрешение?</string>
+    <string name="storagepermissionnotgranted">Разрешение на хранилище не предоставлено.</string>
+    <string name="Sure">Конечно</string>
+    <string name="tocreateaseamlessexperience">Для плавной работы необходимо разрешение на уведомления.</string>
+    <string name="notificationpermissionnotgranted">Разрешение на уведомления не предоставлено</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">Заблокированные файлы</string>
+    <string name="Show">Показать</string>
+    <string name="pdf">pdf</string>
+    <string name="doc">doc</string>
+    <string name="videos">Видео</string>
+    <string name="images">Изображения</string>
+    <string name="ppt">ppt</string>
+    <string name="excel">excel</string>
+    <string name="audio">Аудио</string>
+    <string name="Allfiles">Все файлы</string>
+    <string name="unlock">Разблокировать</string>
+
+    <!-- inside settings -->
+    <string name="darkMode">Темный режим</string>
+    <string name="ChangePin">Изменить PIN-код</string>
+    <string name="LockerGridSize">Размер сетки хранилища</string>
+    <string name="UnlockHistory">История разблокировок</string>
+    <string name="SetLanguage">Выбрать язык</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">Введите PIN-код еще раз</string>
+    <string name="Typedpin">Введённый PIN: </string>
+    <string name="PinSetSuccessfully">PIN успешно установлен</string>
+    <string name="Enternewpin">Введите новый PIN</string>
+    <string name="Enteroldpin">Введите старый PIN</string>
+    <string name="Enteragain">Введите снова</string>
+    <string name="Passworddonnotmatch">PIN-коды не совпадают</string>
+    <string name="pressoktosetnewpin">Нажмите OK, чтобы установить новый PIN</string>
+    <string name="reminder">Напоминание</string>
+    <string name="settingANewPinWillErase">Установка нового PIN удалит все файлы из хранилища.</string>
+    <string name="ForgotPassword">Забыли пароль?</string>
+    <string name="DataWipedSuccessfully">Данные успешно удалены</string>
+    <string name="ErrorInWipingData">Ошибка при удалении данных</string>
+    <string name="Failed">Не удалось</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">Размер сетки хранилища</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">История разблокировок файлов</string>
+    <string name="doyourreallywantto">Вы действительно хотите очистить историю разблокировок?</string>
+    <string name="alert">Внимание</string>
+    <string name="cancel">Отмена</string>
+    <string name="yes">Да</string>
+    <string name="clear">Очистить</string>
+    <string name="filerestoredsuccessfully">Файл успешно восстановлен</string>
+    <string name="itemnotselected">Элемент не выбран</string>
+    <string name="Filerestoredat">Файл восстановлен в</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">Выберите язык</string>
+    <string name="English">Английский</string>
+    <string name="Spanish">Испанский</string>
+    <string name="Arabic">Арабский</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">Файловое хранилище Coyote</string>
+    <string name="appDescription">Это приложение помогает защитить ваши важные файлы от посторонних.</string>
+    <string name="version">Версия:</string>
+    <string name="madeWithLove">Сделано с любовью в Velocity Labs ❤️</string>
+
+    <!-- Notepad -->
+    <string name="newnote">Новая заметка</string>
+    <string name="noteheading">Заголовок заметки</string>
+    <string name="notedetails">Детали заметки</string>
+    <string name="Savenote">Сохранить заметку</string>
+    <string name="notesaved">Заметка успешно сохранена</string>
+    <string name="areyousure">Вы уверены, что хотите удалить эту заметку?</string>
+    <string name="delete">Удалить</string>
+    <string name="NoteDeleted">Заметка удалена</string>
+    <string name="heading">Пожалуйста, введите заголовок</string>
+    <string name="savedSuccessfully">Успешно сохранено</string>
+    <string name="errorsavingnote">Ошибка при сохранении заметки</string>
+    <string name="noteupdated">Заметка успешно обновлена</string>
+    <string name="errorupdating">Ошибка при обновлении</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">Сканер документов</string>
+    <string name="Scan">Сканировать</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">Выберите изображение</string>
+    <string name="Compressimage">Сжать изображение</string>
+    <string name="Customcompress">Пользовательское сжатие</string>
+    <string name="Actualimage">Исходное изображение</string>
+    <string name="CompressedImage">Сжатое изображение</string>
+    <string name="Pleasechoose">Пожалуйста, выберите изображение</string>
+    <string name="EnterImageDimension">Введите размеры изображения</string>
+    <string name="Entersize">Введите размер</string>
+    <string name="size">Размер:</string>
+    <string name="compressedimagesavedin">Сжатое изображение сохранено в</string>
+    <string name="EnterimageDimension">Введите размеры изображения</string>
+    <string name="pleaseentervalid">Введите допустимые значения ширины, высоты и размера</string>
+    <string name="pleaseentervalidsecond">Введите корректную ширину и высоту</string>
+    <string name="pleaseentervalid3">Введите корректный размер</string>
+    <string name="failedtoopen">Не удалось открыть изображение!</string>
+    <string name="failedtoread">Не удалось прочитать данные изображения!</string>
+    <string name="failetoclear">Не удалось очистить кэш!</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">Ошибка при получении цитаты</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">Ваш отзыв</string>
+    <string name="Subject">Тема:</string>
+    <string name="EnterSubject">Введите тему</string>
+    <string name="Body">Сообщение:</string>
+    <string name="Emailbody">Введите текст сообщения</string>
+    <string name="Send">Отправить</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">Помощь и поддержка</string>
+    <string name="q1">1. Как установить новый PIN-код?</string>
+    <string name="q2">2. Могу ли я восстановить файлы в их исходное место?</string>
+    <string name="q3">3. Безопасны ли мои данные в хранилище?</string>
+    <string name="q4">4. Какие типы файлов поддерживаются?</string>
+    <string name="q5">5. Как удалить файлы из хранилища?</string>
+    <string name="q6">6. Что делать, если я забыл PIN?</string>
+    <string name="q1answer">Чтобы установить новый PIN, откройте боковое меню и выберите «Настройки».</string>
+    <string name="q2answer">Да, вы можете восстановить файлы, удерживая элемент — появится опция восстановления.</string>
+    <string name="q3answer">Ваши данные защищены от других приложений и пользователей без PIN-кода.</string>
+    <string name="q4answer">Coyote поддерживает форматы jpg, png, pdf, doc, excel и другие.</string>
+    <string name="q5answer">Удерживайте элемент, который хотите удалить, затем нажмите иконку удаления.</string>
+    <string name="q6answer">Попробуйте ввести PIN не менее 4 раз — появится окно сброса PIN.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">Скачайте Coyote File Locker!</string>
+    <string name="checkitout">Попробуйте сейчас:</string>
+
+</resources>

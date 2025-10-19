@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- メニュー項目 -->
+    <string name="Settings">設定</string>
+    <string name="About">Coyoteについて</string>
+    <string name="Notepad">ノート</string>
+    <string name="AiTools">AIツール</string>
+    <string name="ImageSize">画像サイズを縮小</string>
+    <string name="Quote">今日の名言</string>
+    <string name="Relax">リラックスして楽しんで</string>
+    <string name="Feedback">フィードバックを送信</string>
+    <string name="Support">ヘルプとサポート</string>
+    <string name="share">アプリを共有</string>
+    <string name="rate">評価する</string>
+    <string name="exit">終了</string>
+
+    <string name="PinTitle">PINを入力</string>
+
+    <!-- ロックページ -->
+    <string name="SelectFile">ファイルタイプを選択</string>
+    <string name="PhotosVideos">写真／ビデオ</string>
+    <string name="Documents">ドキュメント</string>
+    <string name="Browse">参照</string>
+    <string name="Lock">ロック</string>
+    <string name="ViewLock">ロックされたファイルを見る</string>
+    <string name="Filename">ファイル名</string>
+    <string name="filenotchosen">ファイルが選択されていません</string>
+    <string name="pleasechooseanother">別のファイルを選択してください</string>
+    <string name="filealreadyexists">ファイルはすでにロッカーに存在します</string>
+    <string name="exitapp">アプリを終了しますか？</string>
+    <string name="filelocksuccessful">ファイルがロックされました。</string>
+    <string name="enablenotificationpermission">設定で通知の権限を有効にしてください</string>
+    <string name="toenablelockpermission">ロック操作にはストレージの権限が必要です。</string>
+    <string name="doyouwantograntthispermission">この権限を付与しますか？</string>
+    <string name="storagepermissionnotgranted">ストレージの権限が付与されていません。</string>
+    <string name="Sure">はい</string>
+    <string name="tocreateaseamlessexperience">快適な利用のために通知の権限が必要です。</string>
+    <string name="notificationpermissionnotgranted">通知の権限が付与されていません。</string>
+
+    <!-- ロッカー履歴 -->
+    <string name="LockedFiles">ロックされたファイル</string>
+    <string name="Show">表示</string>
+    <string name="pdf">PDF</string>
+    <string name="doc">DOC</string>
+    <string name="videos">ビデオ</string>
+    <string name="images">画像</string>
+    <string name="ppt">PPT</string>
+    <string name="excel">Excel</string>
+    <string name="audio">オーディオ</string>
+    <string name="Allfiles">すべてのファイル</string>
+    <string name="unlock">解除</string>
+
+    <!-- 設定内 -->
+    <string name="darkMode">ダークモード</string>
+    <string name="ChangePin">PINを変更</string>
+    <string name="LockerGridSize">ロッカーグリッドのサイズ</string>
+    <string name="UnlockHistory">解除履歴</string>
+    <string name="SetLanguage">言語設定</string>
+
+    <!-- PIN変更 -->
+    <string name="EnterPinAgain">もう一度PINを入力</string>
+    <string name="Typedpin">入力されたPIN：</string>
+    <string name="PinSetSuccessfully">PINが正常に設定されました</string>
+    <string name="Enternewpin">新しいPINを入力</string>
+    <string name="Enteroldpin">古いPINを入力</string>
+    <string name="Enteragain">再入力してください</string>
+    <string name="Passworddonnotmatch">パスワードが一致しません</string>
+    <string name="pressoktosetnewpin">OKを押して新しいPINを設定</string>
+    <string name="reminder">リマインダー</string>
+    <string name="settingANewPinWillErase">新しいPINを設定すると、ロックされたファイルが削除されます。</string>
+    <string name="ForgotPassword">パスワードを忘れましたか？</string>
+    <string name="DataWipedSuccessfully">データが正常に消去されました</string>
+    <string name="ErrorInWipingData">データの消去中にエラーが発生しました</string>
+    <string name="Failed">失敗しました</string>
+
+    <!-- グリッドサイズ -->
+    <string name="LockerGridsize">ロッカ―グリッドのサイズ</string>
+
+    <!-- 解除履歴 -->
+    <string name="yourfileunlockhistory">ファイル解除履歴</string>
+    <string name="doyourreallywantto">本当に解除履歴を削除しますか？</string>
+    <string name="alert">警告</string>
+    <string name="cancel">キャンセル</string>
+    <string name="yes">はい</string>
+    <string name="clear">クリア</string>
+    <string name="filerestoredsuccessfully">ファイルが正常に復元されました</string>
+    <string name="itemnotselected">項目が選択されていません</string>
+    <string name="Filerestoredat">ファイルは次に復元されました：</string>
+
+    <!-- 言語選択 -->
+    <string name="ChooseLanguage">言語を選択</string>
+    <string name="English">英語</string>
+    <string name="Spanish">スペイン語</string>
+
+    <!-- アバウトページ -->
+    <string name="coyotefilelocker">コヨーテファイルロッカー</string>
+    <string name="appDescription">このアプリは、大切なファイルを他の人から保護します。</string>
+    <string name="version">バージョン：</string>
+    <string name="madeWithLove">Velocity Labsによる ❤️ 製作</string>
+
+    <!-- ノート -->
+    <string name="newnote">新しいノート</string>
+    <string name="noteheading">ノートのタイトル</string>
+    <string name="notedetails">ノートの詳細</string>
+    <string name="Savenote">ノートを保存</string>
+    <string name="notesaved">ノートが保存されました</string>
+    <string name="areyousure">このノートを削除しますか？</string>
+    <string name="delete">削除</string>
+    <string name="NoteDeleted">ノートが削除されました</string>
+    <string name="heading">タイトルを入力してください</string>
+    <string name="savedSuccessfully">保存に成功しました</string>
+    <string name="errorsavingnote">保存中にエラーが発生しました</string>
+    <string name="noteupdated">ノートが更新されました</string>
+    <string name="errorupdating">更新中にエラーが発生しました</string>
+
+    <!-- AIツールセクション -->
+    <string name="documentScanner">ドキュメントスキャナー</string>
+    <string name="Scan">スキャン</string>
+
+    <!-- 画像圧縮 -->
+    <string name="chooseimage">画像を選択</string>
+    <string name="Compressimage">画像を圧縮</string>
+    <string name="Customcompress">カスタム圧縮</string>
+    <string name="Actualimage">元の画像</string>
+    <string name="CompressedImage">圧縮された画像</string>
+    <string name="Pleasechoose">画像を選択してください</string>
+    <string name="EnterImageDimension">画像の寸法を入力</string>
+    <string name="Entersize">サイズを入力</string>
+    <string name="size">サイズ：‑</string>
+    <string name="compressedimagesavedin">圧縮画像はこちらに保存されました：</string>
+    <string name="EnterimageDimension">画像の寸法を入力</string>
+    <string name="pleaseentervalid">幅・高さ・サイズに有効な値を入力してください</string>
+    <string name="pleaseentervalidsecond">有効な幅と高さを入力してください</string>
+    <string name="pleaseentervalid3">有効なサイズを入力してください</string>
+    <string name="failedtoopen">画像を開けませんでした！</string>
+    <string name="failedtoread">画像情報を読み取れませんでした！</string>
+    <string name="failetoclear">キャッシュをクリアできませんでした</string>
+
+    <!-- 名言セクション -->
+    <string name="failedtofetch">名言の取得に失敗しました</string>
+
+    <!-- フィードバックセクション -->
+    <string name="yourfeedback">あなたのフィードバック</string>
+    <string name="Subject">件名：</string>
+    <string name="EnterSubject">件名を入力してください</string>
+    <string name="Body">本文：</string>
+    <string name="Emailbody">メール本文を入力してください</string>
+    <string name="Send">送信</string>
+
+    <!-- ヘルプ＆サポート -->
+    <string name="helpandsupport">ヘルプ＆サポート</string>
+    <string name="q1">1. 新しいPINをどうやって設定しますか？</string>
+    <string name="q2">2. ロッカーのファイルを元の場所に復元できますか？</string>
+    <string name="q3">3. ロッカー内のデータは安全ですか？</string>
+    <string name="q4">4. ロッカーはどんな種類のデータに対応していますか？</string>
+    <string name="q5">5. ロッカーからファイルをどうやって削除しますか？</string>
+    <string name="q6">6. PINを忘れたらどうなりますか？</string>
+    <string name="q1answer">新しいPINを設定するには、サイドナビゲーションメニューから「設定」を開いてください。</string>
+    <string name="q2answer">はい、アイテムを長押しすると復元オプションが上部に表示され、元の場所に戻せます。</string>
+    <string name="q3answer">他のアプリやユーザーがあなたのPINを知らない限り、データはロッカー内で安全に保護されます。</string>
+    <string name="q4answer">Coyote File Lockerは、jpg、png、pdf、doc、excelなど多くのファイル形式に対応しています。</string>
+    <string name="q5answer">削除したいアイテムを長押しすると、削除アイコンが表示されて、ファイルがロッカーから削除されます。</string>
+    <string name="q6answer">PINを4回以上間違えると、新しいPINを設定するダイアログが表示されます。</string>
+
+    <!-- アプリ共有 -->
+    <string name="downloadcoyote">Coyote File Lockerをダウンロード！</string>
+    <string name="checkitout">ぜひチェックしてみてください：</string>
+
+</resources>

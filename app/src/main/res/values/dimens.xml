@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_image_dimen">140dp</dimen>
+    <dimen name="finger_print_text_size">16sp</dimen>
+    <dimen name="key_text_size">24sp</dimen>
+    <dimen name="key_stroke_width">1dp</dimen>
+    <dimen name="indicator_stroke_width">1dp</dimen>
+    <dimen name="indicator_radius">5dp</dimen>
+    <dimen name="key_padding">15dp</dimen>
+    <dimen name="pattern_cell_radius">5dp</dimen>
+    <dimen name="lib_title_text_size">20sp</dimen>
+    <dimen name="lib_title_vertical_margin">40dp</dimen>
+    <dimen name="lib_divider_vertical_margin">16dp</dimen>
+    <dimen name="lib_divider_horizontal_margin">5dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

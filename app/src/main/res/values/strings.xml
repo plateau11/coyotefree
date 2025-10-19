@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Coyote</string>
+    <string name="channel_name">My Channel</string>
+    <string name="channel_description">This is channel description</string>
+    <string name="ok">OK</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="cancel">cancel</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+
+    <!-- Keys -->
+
+    <string name="cypherInstance">AES/CBC/PKCS5Padding</string>
+    <string name="text_key">password</string>
+
+    <string name="scan_button" translatable="false">Scan</string>
+    <string name="scan_result" translatable="false">Scan result:\n%1$s</string>
+    <string name="error_scanner_cancelled" translatable="false">Scanner is cancelled.</string>
+    <string name="error_default_message" translatable="false">Failed to scan: %1$s</string>
+    <string name="label_mode_selector" translatable="false">Scanner feature mode: </string>
+    <string name="label_enable_gallery_import" translatable="false">Enable gallery import: </string>
+    <string name="label_set_page_limit" translatable="false">Set page limit per scan: </string>
+    <string name="first_page_view" translatable="false">First page of the scanned document</string>
+
+    <!-- Menu files -->
+    <string name="Settings">Settings</string>
+    <string name="About">About Coyote</string>
+    <string name="Notepad">Notepad</string>
+    <string name="AiTools">AI Tools</string>
+    <string name="ImageSize">Decrease Image Size</string>
+    <string name="Quote">Your Daily Quote</string>
+    <string name="Relax">Relax &amp; Enjoy</string>
+    <string name="Feedback">Send Feedback</string>
+    <string name="Support">Help &amp; Support</string>
+    <string name="share">Share App</string>
+    <string name="rate">Rate Us!</string>
+    <string name="exit">Exit</string>
+
+    <string name="PinTitle">Enter pin</string>
+
+    <!-- lock page -->
+    <string name="SelectFile">Select file type</string>
+    <string name="PhotosVideos">Photos/Videos</string>
+    <string name="Documents">Documents</string>
+    <string name="Browse">Browse</string>
+    <string name="Lock">Lock</string>
+    <string name="ViewLock">View locked files</string>
+    <string name="Filename">Filename</string>
+    <string name="filenotchosen">File not chosen</string>
+    <string name="pleasechooseanother">please choose another file</string>
+    <string name="filealreadyexists">File already exists in the locker</string>
+    <string name="exitapp">Exit App?</string>
+    <string name="filelocksuccessful">File lock successful.</string>
+    <string name="enablenotificationpermission">Enable Notification Permission in Settings</string>
+    <string name="toenablelockpermission">To perform lock operation we require your storage permission.</string>
+    <string name="doyouwantograntthispermission">Do you want to grant this permission ?</string>
+    <string name="storagepermissionnotgranted">Storage permission not granted.</string>
+    <string name="Sure">Sure</string>
+    <string name="tocreateaseamlessexperience">To create a seamless experience we require your notification permission.</string>
+    <string name="notificationpermissionnotgranted">Notification permission not granted</string>
+
+    <!--locker page history -->
+    <string name="LockedFiles">Locked Files</string>
+    <string name="Show">show</string>
+    <string name="pdf">pdf</string>
+    <string name="doc">doc</string>
+    <string name="videos">videos</string>
+    <string name="images">images</string>
+    <string name="ppt">ppt</string>
+    <string name="excel">excel</string>
+    <string name="audio">audio</string>
+    <string name="Allfiles">All files</string>
+    <string name="unlock">Unlock</string>
+    <string name="filerestoredsuccessfully">File restored successfully</string>
+    <string name="itemnotselected">Item not selected</string>
+    <string name="Filerestoredat">File Restored at</string>
+
+    <!--inside setting -->
+    <string name="darkMode">Dark Mode</string>
+    <string name="ChangePin">Change PIN</string>
+    <string name="LockerGridSize">Locker Grid Size</string>
+    <string name="UnlockHistory">Unlock History</string>
+    <string name="SetLanguage">Set Language</string>
+
+    <!--inside change pin -->
+    <string name="EnterPinAgain">Enter Pin Again</string>
+    <string name="Typedpin">Typed Pin: </string>
+    <string name="PinSetSuccessfully">Pin Set Successfully</string>
+    <string name="Enternewpin">Enter New Pin</string>
+    <string name="Enteroldpin">Enter old pin</string>
+    <string name="Enteragain">Enter again</string>
+    <string name="Passworddonnotmatch">Password do not match</string>
+    <string name="pressoktosetnewpin">Press ok to set new pin</string>
+    <string name="reminder">Reminder</string>
+    <string name="settingANewPinWillErase">Setting a new pin will erase your locked files.</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="DataWipedSuccessfully">Data Wiped Successfully</string>
+    <string name="ErrorInWipingData">Error in wiping data</string>
+    <string name="Failed">Failed</string>
+
+    <!--inside grid size -->
+    <string name="LockerGridsize">Locker Grid Size</string>
+
+    <!--inside unlock history -->
+    <string name="yourfileunlockhistory">Your File Unlock History</string>
+    <string name="doyourreallywantto">Do you really want to clear your unlock history?</string>
+    <string name="alert">alert</string>
+    <string name="yes">yes</string>
+    <string name="clear">clear</string>
+
+
+    <!--set language option -->
+    <string name="ChooseLanguage">Choose Language</string>
+    <string name="English">English</string>
+    <string name="Spanish">Spanish</string>
+
+    <!--about page -->
+    <string name="coyotefilelocker">Coyote File Locker</string>
+    <string name="appDescription">This app helps you secure your important files from other people.</string>
+    <string name="version">Version:</string>
+    <string name="madeWithLove">Made with ❤️ by Velocity Labs</string>
+
+    <!--Notepad -->
+    <string name="newnote">New Note</string>
+    <string name="noteheading">Note Heading</string>
+    <string name="notedetails">Note Details</string>
+    <string name="Savenote">Save Note</string>
+    <string name="notesaved">Note Saved Successfully</string>
+    <string name="areyousure">Are you sure you want to delete this note?</string>
+    <string name="delete">Delete</string>
+    <string name="NoteDeleted">Note Deleted</string>
+    <string name="heading">Please enter a heading</string>
+    <string name="savedSuccessfully">Note saved successfully</string>
+    <string name="errorsavingnote">Error saving note</string>
+    <string name="noteupdated">Note updated successfully</string>
+    <string name="errorupdating">Error updating note</string>
+
+    <!--Ai tools section -->
+    <string name="documentScanner">Document Scanner</string>
+    <string name="Scan">Scan</string>
+
+    <!--Image Compressor -->
+    <string name="chooseimage">Choose image</string>
+    <string name="Compressimage">Compress image</string>
+    <string name="Customcompress">Custom compress</string>
+    <string name="Actualimage">Actual Image</string>
+    <string name="CompressedImage">Compressed Image</string>
+    <string name="Pleasechoose">Please Choose an Image</string>
+    <string name="EnterImageDimension">Enter Image Dimensions</string>
+    <string name="Entersize">Enter size</string>
+    <string name="size">Size : -</string>
+    <string name="compressedimagesavedin">Compressed Image Saved in</string>
+    <string name="EnterimageDimension">Enter image Dimensions</string>
+    <string name="pleaseentervalid">Please enter valid values for width, height, and size</string>
+    <string name="pleaseentervalidsecond">Please enter valid width and height</string>
+    <string name="pleaseentervalid3">Please enter a valid size</string>
+    <string name="failedtoopen">Failed to open picture!</string>
+    <string name="failedtoread">Failed to read picture data!</string>
+    <string name="failetoclear">Failed to clear cache</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">Failed to fetch quote</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">Your Feedback</string>
+    <string name="Subject">Subject:</string>
+    <string name="EnterSubject">Enter Subject</string>
+    <string name="Body">Body:</string>
+    <string name="Emailbody">Write your email body</string>
+    <string name="Send">Send</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">Help &amp; Support</string>
+    <string name="q1">1. How do I set a new PIN?</string>
+    <string name="q2">2. Can I restore the files from locker to original location?</string>
+    <string name="q3">3. Is my data safe in the locker?</string>
+    <string name="q4">4. What are the different types of data supported in the locker?</string>
+    <string name="q5">5. How to remove files from locker?</string>
+    <string name="q6">6. What if I forget my Pin></string>
+    <string name="q1answer">Inorder to set a new PIN please go to the navigation drawer on the side and click on the settings menu.</string>
+    <string name="q2answer">Yes, it is possible to restore your files by using long press on the item which makes a restore item option appear in the upper toolbar.</string>
+    <string name="q3answer">Your data is safe in the locker from other apps and users who do not have access to your PIN.</string>
+    <string name="q4answer">Coyote File Locker supports many different types of file including jpg, png, pdf, doc, excel.</string>
+    <string name="q5answer">Long press on the item you want to delete. A delete icon appears which deletes the item from the locker.</string>
+    <string name="q6answer">Try atleast 4 times before a dialog box appears where you can set a new pin.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">Download Coyote File Locker!</string>
+    <string name="checkitout">Check it out:</string>
+
+
+</resources>

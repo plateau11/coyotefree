@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item
+        android:id="@+id/privateText"
+        android:title="Send private texts"
+        android:icon="@drawable/message"/>
+    -->
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/Settings"
+        android:icon="@drawable/settings13"/>
+
+    <item
+        android:id="@+id/About"
+        android:title="@string/About"
+        android:icon="@drawable/glider"/>
+
+    <!--
+        <item
+            android:id="@+id/prayerRequest3"
+            android:title="App Updates"
+            android:icon="@drawable/updates"/>
+    -->
+    <!--
+
+    -->
+
+    <item
+        android:id="@+id/note"
+        android:title="@string/Notepad"
+        android:icon="@drawable/notes2"/>
+
+    <item
+        android:id="@+id/ai"
+        android:title="@string/AiTools"
+        android:icon="@drawable/ai1"/>
+
+    <item
+        android:id="@+id/compress"
+        android:title="@string/ImageSize"
+        android:icon="@drawable/compress1"/>
+
+    <item
+        android:id="@+id/quote"
+        android:title="@string/Quote"
+        android:icon="@drawable/quote1"/>
+
+    <item
+        android:id="@+id/relax"
+        android:title="@string/Relax"
+        android:icon="@drawable/relax1"/>
+
+    <item
+        android:id="@+id/Feedback"
+        android:title="@string/Feedback"
+        android:icon="@drawable/feedback12"/>
+
+    <item
+        android:id="@+id/support"
+        android:title="@string/Support"
+        android:icon="@drawable/ask4"/>
+
+   <!-- <item
+        android:id="@+id/terms"
+        android:title="Terms &amp; Conditions"
+        android:icon="@drawable/ask6"/>
+   -->
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/share2"/>
+
+    <item
+        android:id="@+id/rate"
+        android:title="@string/rate"
+        android:icon="@drawable/rate4"/>
+
+    <!--<item
+        android:id="@+id/ppolicy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/shield5"/>-->
+
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit"
+        android:icon="@drawable/power2"/>
+
+</menu>

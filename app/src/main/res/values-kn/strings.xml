@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">ಸೆಟ್ಟಿಂಗ್ಸ್</string>
+    <string name="About">ಕೋಯೋಟ್ ಬಗ್ಗೆ</string>
+    <string name="Notepad">ನೋಟ್ಪ್ಯಾಡ್</string>
+    <string name="AiTools">ಎಐ ಸಾಧನಗಳು</string>
+    <string name="ImageSize">ಚಿತ್ರ ಗಾತ್ರ ಕಡಿಮೆ ಮಾಡಿ</string>
+    <string name="Quote">ನಿಮ್ಮ ದಿನನಿತ್ಯದ ಉಕ್ತಿಯು</string>
+    <string name="Relax">ಶಾಂತವಾಗಿರಿ ಮತ್ತು ಅನುಭವಿಸಿ</string>
+    <string name="Feedback">ಪ್ರತಿಕ್ರಿಯೆ ಕಳುಹಿಸು</string>
+    <string name="Support">ಸಹಾಯ &amp; ಬೆಂಬಲ</string>
+    <string name="share">ಆಪ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="rate">ರೇಟಿಂಗ್ ನೀಡಿ!</string>
+    <string name="exit">ನಿರ್ಗಮನ</string>
+
+    <string name="PinTitle">ಪಿನ್ ನಮೂದಿಸಿ</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">ಫೈಲ್ ಪ್ರಕಾರ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="PhotosVideos">ಫೋಟೋಗಳು/ವೀಡಿಯೋಗಳು</string>
+    <string name="Documents">ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳು</string>
+    <string name="Browse">ಬ್ರೌಸ್ ಮಾಡಿ</string>
+    <string name="Lock">ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="ViewLock">ಲಾಕ್ ಮಾಡಿದ ಫೈಲ್‌ಗಳನ್ನು ನೋಡಿ</string>
+    <string name="Filename">ಫೈಲ್ ಹೆಸರು</string>
+    <string name="filenotchosen">ಯಾವುದೇ ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಲಾಯಿತು</string>
+    <string name="pleasechooseanother">ಇನ್ನೊಂದು ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="filealreadyexists">ಫೈಲ್ ಈಗಾಗಲೇ ಲಾಕರ್‌ನಲ್ಲಿ ಇದೆ</string>
+    <string name="exitapp">ಯಾಪ್‌ನ್ನು ತೊలಗಬೇಕೆ?</string>
+    <string name="filelocksuccessful">ಫೈಲ್ ಯಶಸ್ವಿಯಾಗಿ ಲಾಕ್ ಆಗಿದೆ.</string>
+    <string name="enablenotificationpermission">ಸೆಟ್ಟಿಂಗ್ಸ್‌ನಲ್ಲಿ ಮಾಹಿತಿ ಅನುಮತಿ (notification) ನೀಡಿರಿ</string>
+    <string name="toenablelockpermission">ಲಾಕ್ ಕಾರ್ಯಕ್ಕಾಗಿ ಸಂಗ್ರಹಣೆ ಅನುಮತಿ ಬೇಕು.</string>
+    <string name="doyouwantograntthispermission">ಈ ಅನುಮತಿಯನ್ನು ಕೊಡಬೇಕೆ?</string>
+    <string name="storagepermissionnotgranted">ಸಂಗ್ರಹಣೆ ಅನುಮತಿ ನೀಡಲಾಗಿಲ್ಲ.</string>
+    <string name="Sure">ಖಚಿತವಾಗಿ</string>
+    <string name="tocreateaseamlessexperience">ಸರಾಗ ಕಾರ್ಯನಿರ್ವಹಣೆಗೆ ಮಾಹಿತಿ ಅನುಮತಿ ಬೇಕಿದೆ.</string>
+    <string name="notificationpermissionnotgranted">ಮಾಹಿತಿ ಅನುಮತಿ ಕಟ್ಟಿರಲಿಲ್ಲ</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">ಲಾಕ್ ಮಾಡಲಾದ ಫೈಲ್‌ಗಳು</string>
+    <string name="Show">ಪ್ರದರ್ಶಿಸಿ</string>
+    <string name="pdf">PDF</string>
+    <string name="doc">DOC</string>
+    <string name="videos">ವೀಡಿಯೋಗಳು</string>
+    <string name="images">ಚಿತ್ರಗಳು</string>
+    <string name="ppt">PPT</string>
+    <string name="excel">Excel</string>
+    <string name="audio">ಆಡಿಯೋ</string>
+    <string name="Allfiles">ಎಲ್ಲಾ ಫೈಲ್‌ಗಳು</string>
+    <string name="unlock">ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+
+    <!-- inside settings -->
+    <string name="darkMode">ಡಾರ್ಕ್ ಮೋಡ್</string>
+    <string name="ChangePin">ಪಿನ್ ಬದಲಿಸಿ</string>
+    <string name="LockerGridSize">ಲಾಕರ್ ಗ್ರಿಡ್ ಗಾತ್ರ</string>
+    <string name="UnlockHistory">ಅನ್‌ಲಾಕ್ ಇತಿಹಾಸ</string>
+    <string name="SetLanguage">ಭಾಷೆ ಸೆಟ್ ಮಾಡಿ</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">ಮತ್ತೆ ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="Typedpin">ನಮೂದಿಸಿದ ಪಿನ್: </string>
+    <string name="PinSetSuccessfully">ಪಿನ್ ಯಶಸ್ವಿಯಾಗಿ ಸೆಟ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="Enternewpin">ಹೊಸದನ್ನು ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="Enteroldpin">ಹಳೆಯ ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="Enteragain">ಮತ್ತೆ ನಮೂದಿಸಿ</string>
+    <string name="Passworddonnotmatch">ಪಾಸ್ವರ್ಡ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ</string>
+    <string name="pressoktosetnewpin">ಹೊಸ ಪಿನ್ ಸೆಟ್ ಮಾಡಲು OK ಒತ್ತಿ</string>
+    <string name="reminder">ಗೂಡಿಸು</string>
+    <string name="settingANewPinWillErase">ಹೊಸ ಪಿನ್ ಸೆಟ್‌ಮಾಡಿದರೆ ಲಾಕ್‌ ಮಾಡಿದ ಫೈಲ್‌ಗಳು ಅಳಿಸಿಕೊಳ್ಳುತ್ತವೆ.</string>
+    <string name="ForgotPassword">ಪಿನ್ ಮರೆತೀರಾ?</string>
+    <string name="DataWipedSuccessfully">ಡೇಟಾ ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="ErrorInWipingData">ಡೇಟಾ ಅಳಿಸುವಲ್ಲಿ ದೋಷ</string>
+    <string name="Failed">ವಿಫಲ</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">ಲಾಕರ್ ಗ್ರಿಡ್ ಗಾತ್ರ</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">ನಿಮ್ಮ ಫೈಲ್ ಅನ್‌ಲಾಕ್ ಇತಿಹಾಸ</string>
+    <string name="doyourreallywantto">ನೀವು నిజವಾಗಿಯೂ ಈ ಇತಿಹಾಸವನ್ನು ಅಳisp ಪಡೆಯಬಯಸುತ್ತೀರಾ?</string>
+    <string name="alert">ಎಚ್ಚರಿಕೆ</string>
+    <string name="cancel">ರದ್ದುಗೊಳಿಸು</string>
+    <string name="yes">ಹೌದು</string>
+    <string name="clear">ಸ್ಪಷ್ಟಪಡಿಸು</string>
+    <string name="filerestoredsuccessfully">ಫೈಲ್ ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಿಸಲಾಗಿದೆ</string>
+    <string name="itemnotselected">ಐಟಂ ಆಯ್ಕೆ ಮಾಡಲಿಲ್ಲ</string>
+    <string name="Filerestoredat">ಫೈಲ್ ಹಿಂತಿರುಗಿಸಿದ ಸ್ಥಳ</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="English">ಇಂಗ್ಲೀಷ್</string>
+    <string name="Spanish">ಸ್ಪ್ಯಾನಿಷ್</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">ಕೋಯೋಟ್ ಫೈಲ್ ಲಾಕರ್</string>
+    <string name="appDescription">ಈ ಆಪ್ ನಿಮ್ಮ ಮಹತ್ವದ ಫೈಲ್‌ಗಳನ್ನು ಇತರರಿಂದ ರಕ್ಷಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</string>
+    <string name="version">संಸ್ಕರಣೆ:</string>
+    <string name="madeWithLove">💖 ಮನದಿಂದ ತಯಾರಿಸಲಾಗಿದೆ – Velocity Labs</string>
+
+    <!-- Notepad -->
+    <string name="newnote">ಹೊಸ ನೋಟು</string>
+    <string name="noteheading">ನೋಟು ಶೀರ್ಷಿಕೆ</string>
+    <string name="notedetails">ನೋಟು ವಿವರಗಳು</string>
+    <string name="Savenote">ನೋಟು ಉಳಿಸಿ</string>
+    <string name="notesaved">ನೋಟು ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="areyousure">ಈ ನೋಟು ನಿಜವಾಗಿಯೂ ಅಳಿಸಬೇಕೆ?</string>
+    <string name="delete">ಅಳಿಸು</string>
+    <string name="NoteDeleted">ನೋಟು ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="heading">ದಯವಿಟ್ಟು ಶೀರ್ಷಿಕೆ ನಮೂದಿಸಿ</string>
+    <string name="savedSuccessfully">ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="errorsavingnote">ನೋಟು ಉಳಿಸುವಲ್ಲಿ ದೋಷ</string>
+    <string name="noteupdated">ನೋಟು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="errorupdating">ನವೀಕರಣದಲ್ಲಿ ದೋಷ</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್</string>
+    <string name="Scan">ಸ್ಕ್ಯಾನ್ ಮಾಡು</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="Compressimage">ಚಿತ್ರ ಕಲ್ಲಿಹರಿಸು</string>
+    <string name="Customcompress">ಸಂಯೋಜಿತ ಕಲ್ಲಿಹರಿಕೆ</string>
+    <string name="Actualimage">ಅಸಲಿ ಚಿತ್ರ</string>
+    <string name="CompressedImage">ಕಲ್ಲಿಹರಿಸಲಾದ ಚಿತ್ರ</string>
+    <string name="Pleasechoose">ದಯವಿಟ್ಟು ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="EnterImageDimension">ಚಿತ್ರ ಅಳತೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="Entersize">ಗಾತ್ರ ನಮೂದಿಸಿ</string>
+    <string name="size">ಗಾತ್ರ : -</string>
+    <string name="compressedimagesavedin">ಕಲ್ಲಿಹರಿಸಿದ ಚಿತ್ರ ಇಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="EnterimageDimension">ಚಿತ್ರ ಅಳತೆ ನಮೂದಿಸಿ</string>
+    <string name="pleaseentervalid">ದಯವಿಟ್ಟು ಮಾನ್ಯ ಅಗಲ, ಎತ್ತರ ಮತ್ತು ಗಾತ್ರ ನಮೂದಿಸಿ</string>
+    <string name="pleaseentervalidsecond">ದಯವಿಟ್ಟು ಮಾನ್ಯ ಅಗಲ ಮತ್ತು ಎತ್ತರ ನಮೂದಿಸಿ</string>
+    <string name="pleaseentervalid3">ದಯವಿಟ್ಟು ಮಾನ್ಯ ಗಾತ್ರ ನಮೂದಿಸಿ</string>
+    <string name="failedtoopen">ಚಿತ್ರ ತೆರೆಯಲು ಆಗಲಿಲ್ಲ!</string>
+    <string name="failedtoread">ಚಿತ್ರ ಮಾಹಿತಿ ಓದಲು ಆಗಲಿಲ್ಲ!</string>
+    <string name="failetoclear">ಕ್ಯಾಶ್ ತೆರವುಗೊಳಿಸಲು ದೋಷ</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">ಉಕ್ತಿ ಪಡೆಯುವಲ್ಲಿ ದೋಷ</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆ</string>
+    <string name="Subject">ವಿಷಯ:</string>
+    <string name="EnterSubject">ವಿಷಯ ನಮೂದಿಸಿ</string>
+    <string name="Body">ದೇಹ:</string>
+    <string name="Emailbody">ಇ ಮೇಲ್ ದೇಹವನ್ನು ಬರೆಯಿರಿ</string>
+    <string name="Send">ಕಳುಹಿಸು</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">ಸಹಾಯ &amp; ಬೆಂಬಲ</string>
+    <string name="q1">1. ಹೊಸ ಪಿನ್ ಹೇಗೆ ಸೆಟ್ ಮಾಡುವುದು?</string>
+    <string name="q2">2. ಲಾಕರ್ ಫೈಲ್‌ಗಳನ್ನು ಹಳೆಯ ಸ್ಥಳಕ್ಕೆ ಹಿಂತಿರ್ಗೊಳಿಸಬಹುದೇ?</string>
+    <string name="q3">3. ನನ್ನ ಡೇಟಾ ಸುರಕ್ಷಿತವೇ?</string>
+    <string name="q4">4. ಲಾಕರ್ ಯಾವ ರೀತಿ ಫೈಲ್‌ಗಳಿಗೆ ಬೆಂಬಲ ನೀಡುತ್ತದೆ?</string>
+    <string name="q5">5. ಲಾಕರ್‌ನಿಂದ ಫೈಲ್‌ಗಳನ್ನು ಹೇಗೆ ತೆಗೆದುಹಾಕಬೇಕಾಗಿದೆ?</string>
+    <string name="q6">6. ಪಿನ್ ಮರೆತರೆ ಏನು ಆಗುತ್ತದೆ?</string>
+    <string name="q1answer">ಹೊಸ ಪಿನ್ ಸೆಟ್ ಮಾಡಲು, ನಾವಿಗೇಶನ್ ಮೆನುನಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್ಸ್ ಕ್ಲಿಕ್ ಮಾಡಿ.</string>
+    <string name="q2answer">ಹೌದು, ಫೈಲ್‌ ಮೇಲೆ ದೀರ್ಘ ಸಂಕೇತ (long press) ಮಾಡಲು “ಹಿಂಪಡೆಯಿ” ಆಯ್ಕೆಯನ್ನು ನೀಡುತ್ತದೆ.</string>
+    <string name="q3answer">ಪಿನ್ ಇಲ್ಲದೆ ಇತರೆ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು / ಬಳಕೆದಾರರು ಫೈಲ್‌ಗಳಿಗೆ 접근ಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="q4answer">ಕೋಯೋಟ್ ಫೈಲ್ ಲಾಕರ್ jpg, png, pdf, doc, excel ಮುಂತಾದ ಫೈಲ್‌ಗಳಿಗೆ ಬೆಂಬಲ ನೀಡುತ್ತದೆ.</string>
+    <string name="q5answer">ತೆಗೆಯಬೇಕಾದ ಫೈಲ್‌ ಮೇಲೆ ದೀರ್ಘ ಸಂಕೇತ ಮಾಡಿ “ಅಳಿಸು” ಐಕಾನ್ ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="q6answer">4 ಬಾರಿ ಪ್ರಯತ್ನಿಸಿದ ಮೇಲೆ ಹೊಸ ಪಿನ್ ಸೆಟ್ ಮಾಡುವ ಡೈಲಾಗ್ ತೋರುತ್ತದೆ.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">ಕೋಯೋಟ್ ಫೈಲ್ ಲಾಕರ್ ಡೌನ್‍ಲೋಡ್ ಮಾಡಿ!</string>
+    <string name="checkitout">ಇದನ್ನು ಪರಿಗಣಿಸಿ:</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/historybackgroundimage"
+    android:background="#D8F2F5"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!-- Moved AppBarLayout to top -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/barbackground2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D8F2F5">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D8F2F5"
+                android:textColor="#F4F5F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+
+    <!-- Content below AppBar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/historybackgroundimage2"
+        android:background="@drawable/aesthetic3"
+        tools:context=".History">
+
+        <FrameLayout
+            android:id="@+id/framel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/filesrestoreloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="250dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:text="Files getting restored to original location"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/idGVcourses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="37dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:verticalSpacing="20dp"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">الإعدادات</string>
+    <string name="About">حول كايوتي</string>
+    <string name="Notepad">دفتر الملاحظات</string>
+    <string name="AiTools">أدوات الذكاء الاصطناعي</string>
+    <string name="ImageSize">تقليل حجم الصورة</string>
+    <string name="Quote">اقتباسك اليومي</string>
+    <string name="Relax">استرخ واستمتع</string>
+    <string name="Feedback">إرسال التعليقات</string>
+    <string name="Support">المساعدة والدعم</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="rate">قيّمنا!</string>
+    <string name="exit">خروج</string>
+
+    <string name="PinTitle">أدخل الرقم السري</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">اختر نوع الملف</string>
+    <string name="PhotosVideos">الصور/الفيديوهات</string>
+    <string name="Documents">المستندات</string>
+    <string name="Browse">تصفح</string>
+    <string name="Lock">قفل</string>
+    <string name="ViewLock">عرض الملفات المقفلة</string>
+    <string name="Filename">اسم الملف</string>
+    <string name="filenotchosen">لم يتم اختيار ملف</string>
+    <string name="pleasechooseanother">الرجاء اختيار ملف آخر</string>
+    <string name="filealreadyexists">الملف موجود بالفعل في الخزنة</string>
+    <string name="exitapp">هل تريد الخروج من التطبيق؟</string>
+    <string name="filelocksuccessful">تم قفل الملف بنجاح.</string>
+    <string name="enablenotificationpermission">فعّل إذن الإشعارات من الإعدادات</string>
+    <string name="toenablelockpermission">لتنفيذ القفل نحتاج إذن الوصول إلى التخزين.</string>
+    <string name="doyouwantograntthispermission">هل تريد منح هذا الإذن؟</string>
+    <string name="storagepermissionnotgranted">لم يُمنح إذن التخزين.</string>
+    <string name="Sure">بالتأكيد</string>
+    <string name="tocreateaseamlessexperience">للحصول على تجربة سلسة نحتاج إذن الإشعارات.</string>
+    <string name="notificationpermissionnotgranted">لم يُمنح إذن الإشعارات</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">الملفات المقفلة</string>
+    <string name="Show">عرض</string>
+    <string name="pdf">pdf</string>
+    <string name="doc">doc</string>
+    <string name="videos">فيديوهات</string>
+    <string name="images">صور</string>
+    <string name="ppt">ppt</string>
+    <string name="excel">excel</string>
+    <string name="audio">صوتيات</string>
+    <string name="Allfiles">جميع الملفات</string>
+    <string name="unlock">فتح</string>
+
+    <!-- inside settings -->
+    <string name="darkMode">الوضع الليلي</string>
+    <string name="ChangePin">تغيير الرقم السري</string>
+    <string name="LockerGridSize">حجم شبكة الخزنة</string>
+    <string name="UnlockHistory">سجل الفتح</string>
+    <string name="SetLanguage">تعيين اللغة</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">أدخل الرقم السري مرة أخرى</string>
+    <string name="Typedpin">الرقم السري المدخل: </string>
+    <string name="PinSetSuccessfully">تم تعيين الرقم السري بنجاح</string>
+    <string name="Enternewpin">أدخل رقمًا سريًا جديدًا</string>
+    <string name="Enteroldpin">أدخل الرقم السري القديم</string>
+    <string name="Enteragain">أعد إدخاله</string>
+    <string name="Passworddonnotmatch">كلمتا السر غير متطابقتين</string>
+    <string name="pressoktosetnewpin">اضغط موافق لتعيين رقم سري جديد</string>
+    <string name="reminder">تذكير</string>
+    <string name="settingANewPinWillErase">تعيين رقم جديد سيؤدي لحذف ملفات الخزنة.</string>
+    <string name="ForgotPassword">هل نسيت كلمة المرور؟</string>
+    <string name="DataWipedSuccessfully">تم مسح البيانات بنجاح</string>
+    <string name="ErrorInWipingData">حدث خطأ أثناء مسح البيانات</string>
+    <string name="Failed">فشل</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">حجم شبكة الخزنة</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">سجل فتح ملفاتك</string>
+    <string name="doyourreallywantto">هل تريد حقاً مسح سجل الفتح؟</string>
+    <string name="alert">تنبيه</string>
+    <string name="cancel">إلغاء</string>
+    <string name="yes">نعم</string>
+    <string name="clear">مسح</string>
+    <string name="filerestoredsuccessfully">تمت إعادة الملف بنجاح</string>
+    <string name="itemnotselected">لم يتم اختيار عنصر</string>
+    <string name="Filerestoredat">تمت استعادة الملف في</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">اختر اللغة</string>
+    <string name="English">الإنجليزية</string>
+    <string name="Spanish">الإسبانية</string>
+    <string name="Arabic">العربية</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">خزنة ملفات كايوتي</string>
+    <string name="appDescription">تساعدك هذه التطبيق في حماية ملفاتك المهمة من الآخرين.</string>
+    <string name="version">الإصدار:</string>
+    <string name="madeWithLove">مصنوع بحب من Velocity Labs ❤️</string>
+
+    <!-- Notepad -->
+    <string name="newnote">ملاحظة جديدة</string>
+    <string name="noteheading">عنوان الملاحظة</string>
+    <string name="notedetails">تفاصيل الملاحظة</string>
+    <string name="Savenote">حفظ الملاحظة</string>
+    <string name="notesaved">تم حفظ الملاحظة بنجاح</string>
+    <string name="areyousure">هل أنت متأكد أنك تريد حذف هذه الملاحظة؟</string>
+    <string name="delete">حذف</string>
+    <string name="NoteDeleted">تم حذف الملاحظة</string>
+    <string name="heading">الرجاء إدخال عنوان</string>
+    <string name="savedSuccessfully">تم الحفظ بنجاح</string>
+    <string name="errorsavingnote">خطأ في حفظ الملاحظة</string>
+    <string name="noteupdated">تم تحديث الملاحظة بنجاح</string>
+    <string name="errorupdating">خطأ في التحديث</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">ماسح المستندات</string>
+    <string name="Scan">مسح</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">اختر صورة</string>
+    <string name="Compressimage">ضغط الصورة</string>
+    <string name="Customcompress">ضغط مخصص</string>
+    <string name="Actualimage">الصورة الأصلية</string>
+    <string name="CompressedImage">الصورة المضغوطة</string>
+    <string name="Pleasechoose">الرجاء اختيار صورة</string>
+    <string name="EnterImageDimension">أدخل أبعاد الصورة</string>
+    <string name="Entersize">أدخل الحجم</string>
+    <string name="size">الحجم:</string>
+    <string name="compressedimagesavedin">تم حفظ الصورة المضغوطة في</string>
+    <string name="EnterimageDimension">أدخل أبعاد الصورة</string>
+    <string name="pleaseentervalid">الرجاء إدخال قيم صحيحة للعرض والارتفاع والحجم</string>
+    <string name="pleaseentervalidsecond">الرجاء إدخال عرض وارتفاع صحيحين</string>
+    <string name="pleaseentervalid3">الرجاء إدخال حجم صحيح</string>
+    <string name="failedtoopen">تعذر فتح الصورة!</string>
+    <string name="failedtoread">تعذر قراءة بيانات الصورة!</string>
+    <string name="failetoclear">تعذر مسح ذاكرة التخزين المؤقت!</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">خطأ في جلب الاقتباس</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">ملاحظاتك</string>
+    <string name="Subject">الموضوع:</string>
+    <string name="EnterSubject">أدخل الموضوع</string>
+    <string name="Body">المحتوى:</string>
+    <string name="Emailbody">اكتب نص الرسالة</string>
+    <string name="Send">إرسال</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">المساعدة والدعم</string>
+    <string name="q1">1. كيف أضبط رقم سري جديد؟</string>
+    <string name="q2">2. هل يمكنني استعادة ملفات الخزنة لموقعها الأصلي؟</string>
+    <string name="q3">3. هل بياناتي آمنة في الخزنة؟</string>
+    <string name="q4">4. ما أنواع الملفات المدعومة؟</string>
+    <string name="q5">5. كيف أحذف ملفات من الخزنة؟</string>
+    <string name="q6">6. ماذا لو نسيت رقم المرور؟</string>
+    <string name="q1answer">لضبط PIN جديد، افتح القائمة الجانبية ثم اضغط على الإعدادات.</string>
+    <string name="q2answer">نعم، يمكنك استعادة ملفاتك بالضغط طويلاً على العنصر، سيظهر خيار استعادة.</string>
+    <string name="q3answer">بياناتك محمية في الخزنة من التطبيقات الأخرى والمستخدمين بدون PIN.</string>
+    <string name="q4answer">كايوتي يدعم أنواع كثيرة مثل jpg، png، pdf، doc، excel.</string>
+    <string name="q5answer">اضغط مطولاً على العنصر الذي تريد حذفه، ستظهر أيقونة الحذف.</string>
+    <string name="q6answer">جرّب على الأقل ٤ مرات حتى يظهر مربع يسمح بإعادة تعيين PIN.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">حمّل Coyote File Locker!</string>
+    <string name="checkitout">اكتشفه الآن:</string>
+
+</resources>

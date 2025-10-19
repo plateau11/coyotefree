@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/terms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helpandsupport"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+
+        <!-- FAQ 1 -->
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q1answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+        <!-- FAQ 2 -->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q2answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+        <!-- FAQ 3 -->
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q3answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+        <!-- FAQ 4 -->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q4"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q4answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+        <!-- FAQ 5 -->
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q5answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+        <!-- FAQ 6 -->
+        <TextView
+            android:id="@+id/question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/toggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:backgroundTint="@color/defaultEndColor"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/answer6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q6answer"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

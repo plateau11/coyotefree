@@ -1,0 +1,35 @@
+creating a minimum viable product(MVP)
+reduces features and time to market
+pricing strategy required for customer aquisition.
+
+Delete problem, empty container.
+
+Holistic testing required.
+Code for sharing of locked files needs to be written.
+Need to think for pdf and doc files.
+as for send private texts feature we need to think about it either we make it more complex or we directly remove it
+should f"{Delete original file} option" be placed in separate settings menu or we keep it as it is?
+image viewer zoom feature required.
+what is the difference between terms and conditions and privacy policy?
+is it possible to scale the app to say 100k customers while monetizing the app at the same time?
+preventing app from being reverse engineered(non-replication) but not causing problem during playstore upload.
+file picker null return app crash problem.
+Deleting inefficiency, apk existence.
+installation time app icon, coyote logo.
+
+ppt file -> pdf file -> pdf file stream -> pdf reader
+(done)      (not done)  (not done)	   (not done)
+
+code study of ppt to pdf required
+
+document picker folder com.coyote problem.
+
+*pdf conversion problem
+*document picker
+*authentication/password
+*decoration
+*multiple selection items
+*file backup github
+*navigation items fillup
+*comprehensive testing phase2
+*app coyote original files pileup -delete

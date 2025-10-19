@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">Configuración</string>
+    <string name="About">Acerca de Coyote</string>
+    <string name="Notepad">Bloc de notas</string>
+    <string name="AiTools">Herramientas de IA</string>
+    <string name="ImageSize">Reducir tamaño de imagen</string>
+    <string name="Quote">Tu cita diaria</string>
+    <string name="Relax">Relájate y disfruta</string>
+    <string name="Feedback">Enviar comentarios</string>
+    <string name="Support">Ayuda y soporte</string>
+    <string name="share">Compartir aplicación</string>
+    <string name="rate">¡Califícanos!</string>
+    <string name="exit">Salir</string>
+
+    <string name="PinTitle">Introducir pin</string>
+
+    <!-- lock page cryto-->
+    <string name="SelectFile">Seleccionar tipo de archivo</string>
+    <string name="PhotosVideos">Fotos/vídeos</string>
+    <string name="Documents">Documentos</string>
+    <string name="Browse">Navegar</string>
+    <string name="Lock">Cerrar</string>
+    <string name="ViewLock">Ver archivos bloqueados</string>
+    <string name="Filename">Nombre del archivo</string>
+    <string name="filenotchosen">Archivo no seleccionado</string>
+    <string name="pleasechooseanother">Por favor, selecciona otro archivo</string>
+    <string name="filealreadyexists">El archivo ya existe en el casillero</string>
+    <string name="exitapp">¿Salir de la aplicación?</string>
+    <string name="filelocksuccessful">Archivo bloqueado con éxito.</string>
+    <string name="enablenotificationpermission">Activa el permiso de notificaciones en Configuración</string>
+    <string name="toenablelockpermission">Para realizar la operación de bloqueo, necesitamos tu permiso de almacenamiento.</string>
+    <string name="doyouwantograntthispermission">¿Deseas conceder este permiso?</string>
+    <string name="storagepermissionnotgranted">Permiso de almacenamiento no concedido.</string>
+    <string name="Sure">Claro</string>
+    <string name="tocreateaseamlessexperience">Para una experiencia fluida, necesitamos tu permiso de notificaciones.</string>
+    <string name="notificationpermissionnotgranted">Permiso de notificaciones no concedido</string>
+
+
+    <!--locker page history -->
+    <string name="LockedFiles">Archivos bloqueados</string>
+    <string name="Show">Mostrar</string>
+    <string name="pdf">pdf</string>
+    <string name="doc">doc</string>
+    <string name="videos">videos</string>
+    <string name="images">imágenes</string>
+    <string name="ppt">ppt</string>
+    <string name="excel">excel</string>
+    <string name="audio">audio</string>
+    <string name="Allfiles">Todos los archivos</string>
+    <string name="unlock">Descubrir</string>
+
+    <!--inside setting -->
+    <string name="darkMode">Modo oscuro</string>
+    <string name="ChangePin">Cambiar PIN</string>
+    <string name="LockerGridSize">Tamaño de cuadrícula del casillero</string>
+    <string name="UnlockHistory">Historial de desbloqueo</string>
+    <string name="SetLanguage">Establecer idioma</string>
+
+    <!--inside change pin -->
+    <string name="EnterPinAgain">Introduce el PIN nuevamente</string>
+    <string name="Typedpin">PIN ingresado: </string>
+    <string name="PinSetSuccessfully">PIN establecido correctamente</string>
+    <string name="Enternewpin">Introduce un nuevo PIN</string>
+    <string name="Enteroldpin">Introduce el PIN antiguo</string>
+    <string name="Enteragain">Vuelve a introducirlo</string>
+    <string name="Passworddonnotmatch">Las contraseñas no coinciden</string>
+    <string name="pressoktosetnewpin">Presiona OK para establecer un nuevo PIN</string>
+    <string name="reminder">Recordatorio</string>
+    <string name="settingANewPinWillErase">Establecer un nuevo PIN borrará tus archivos bloqueados.</string>
+    <string name="ForgotPassword">¿Olvidaste tu contraseña?</string>
+    <string name="DataWipedSuccessfully">Datos borrados correctamente</string>
+    <string name="ErrorInWipingData">Error al borrar los datos</string>
+    <string name="Failed">Fallido</string>
+
+    <!--inside grid size -->
+    <string name="LockerGridsize">Tamaño de la cuadrícula del casillero</string>
+
+    <!--inside unlock history -->
+    <string name="yourfileunlockhistory">Historial de desbloqueo de tus archivos</string>
+    <string name="doyourreallywantto">¿Realmente deseas borrar tu historial de desbloqueo?</string>
+    <string name="alert">alerta</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes">Sí</string>
+    <string name="clear">clara</string>
+    <string name="filerestoredsuccessfully">Archivo restaurado con éxito</string>
+    <string name="itemnotselected">Elemento no seleccionado</string>
+    <string name="Filerestoredat">Archivo restaurado en</string>
+
+    <!--set language option -->
+    <string name="ChooseLanguage">Elija idioma</string>
+    <string name="English">Inglesa</string>
+    <string name="Spanish">Española</string>
+
+    <!--about page -->
+    <string name="coyotefilelocker">Casillero de archivos Coyote</string>
+    <string name="appDescription">Esta aplicación te ayuda a proteger tus archivos importantes de otras personas.</string>
+    <string name="version">Versión:</string>
+    <string name="madeWithLove">Hecho con ❤️ por Velocity Labs</string>
+
+    <!--Notepad -->
+    <string name="newnote">Nueva nota</string>
+    <string name="noteheading">Título de la nota</string>
+    <string name="notedetails">Detalles de la nota</string>
+    <string name="Savenote">Guardar nota</string>
+    <string name="notesaved">Nota guardada correctamente</string>
+    <string name="areyousure">¿Estás seguro de que deseas eliminar esta nota?</string>
+    <string name="delete">Eliminar</string>
+    <string name="NoteDeleted">Nota eliminada</string>
+    <string name="heading">Por favor, introduce un título</string>
+    <string name="savedSuccessfully">Nota guardada correctamente</string>
+    <string name="errorsavingnote">Error al guardar la nota</string>
+    <string name="noteupdated">Nota actualizada correctamente</string>
+    <string name="errorupdating">Error al actualizar la nota</string>
+
+    <!--Ai tools section -->
+    <string name="documentScanner">Escáner de documentos</string>
+    <string name="Scan">Escanear</string>
+
+    <!--Image Compressor -->
+    <string name="chooseimage">Elegir imagen</string>
+    <string name="Compressimage">Comprimir imagen</string>
+    <string name="Customcompress">Compresión personalizada</string>
+    <string name="Actualimage">Imagen original</string>
+    <string name="CompressedImage">Imagen comprimida</string>
+    <string name="Pleasechoose">Por favor, elige una imagen</string>
+    <string name="EnterImageDimension">Introduce las dimensiones de la imagen</string>
+    <string name="Entersize">Introduce el tamaño</string>
+    <string name="size">Tamaño : -</string>
+    <string name="compressedimagesavedin">Imagen comprimida guardada en</string>
+    <string name="EnterimageDimension">Introduce las dimensiones de la imagen</string>
+    <string name="pleaseentervalid">Por favor, introduce valores válidos para ancho, alto y tamaño</string>
+    <string name="pleaseentervalidsecond">Por favor, introduce un ancho y alto válidos</string>
+    <string name="pleaseentervalid3">Por favor, introduce un tamaño válido</string>
+    <string name="failedtoopen">¡No se pudo abrir la imagen!</string>
+    <string name="failedtoread">¡No se pudo leer la información de la imagen!</string>
+    <string name="failetoclear">No se pudo limpiar la caché</string>
+
+
+    <!-- quotes section -->
+    <string name="failedtofetch">Error al obtener la cita</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">Tu opinión</string>
+    <string name="Subject">Asunto:</string>
+    <string name="EnterSubject">Introduce el asunto</string>
+    <string name="Body">Cuerpo:</string>
+    <string name="Emailbody">Escribe el cuerpo del correo</string>
+    <string name="Send">Enviar</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">Ayuda y Soporte</string>
+    <string name="q1">1. ¿Cómo configuro un nuevo PIN?</string>
+    <string name="q2">2. ¿Puedo restaurar los archivos del casillero a su ubicación original?</string>
+    <string name="q3">3. ¿Están seguros mis datos en el casillero?</string>
+    <string name="q4">4. ¿Qué tipos de datos admite el casillero?</string>
+    <string name="q5">5. ¿Cómo eliminar archivos del casillero?</string>
+    <string name="q6">6. ¿Qué pasa si olvido mi PIN?</string>
+    <string name="q1answer">Para configurar un nuevo PIN, abre el menú de navegación lateral y haz clic en la opción de configuración.</string>
+    <string name="q2answer">Sí, es posible restaurar tus archivos manteniendo presionado el elemento. Esto hará que aparezca una opción de restaurar en la barra superior.</string>
+    <string name="q3answer">Tus datos están seguros en el casillero frente a otras aplicaciones y usuarios que no tengan acceso a tu PIN.</string>
+    <string name="q4answer">Coyote File Locker admite muchos tipos de archivos, incluidos jpg, png, pdf, doc y excel.</string>
+    <string name="q5answer">Mantén presionado el elemento que deseas eliminar. Aparecerá un icono de eliminar que eliminará el archivo del casillero.</string>
+    <string name="q6answer">Inténtalo al menos 4 veces hasta que aparezca un cuadro de diálogo que te permita configurar un nuevo PIN.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">¡Descarga Coyote File Locker!</string>
+    <string name="checkitout">Échale un vistazo:</string>
+
+
+</resources>

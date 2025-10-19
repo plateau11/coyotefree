@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">تنظیمات</string>
+    <string name="About">درباره کایوت</string>
+    <string name="Notepad">دفترچه یادداشت</string>
+    <string name="AiTools">ابزارهای هوش مصنوعی</string>
+    <string name="ImageSize">کاهش حجم تصویر</string>
+    <string name="Quote">نقل‌قول روزانه شما</string>
+    <string name="Relax">استراحت کن و لذت ببر</string>
+    <string name="Feedback">ارسال بازخورد</string>
+    <string name="Support">پشتیبانی و کمک</string>
+    <string name="share">اشتراک‌گذاری اپلیکیشن</string>
+    <string name="rate">ما را امتیاز دهید!</string>
+    <string name="exit">خروج</string>
+
+    <string name="PinTitle">وارد کردن پین</string>
+
+    <!-- lock page crypto -->
+    <string name="SelectFile">انتخاب نوع فایل</string>
+    <string name="PhotosVideos">عکس/ویدیو</string>
+    <string name="Documents">سندها</string>
+    <string name="Browse">مرور</string>
+    <string name="Lock">قفل کردن</string>
+    <string name="ViewLock">نمایش فایل‌های قفل‌شده</string>
+    <string name="Filename">نام فایل</string>
+    <string name="filenotchosen">هیچ فایلی انتخاب نشده است</string>
+    <string name="pleasechooseanother">لطفاً فایل متفاوتی انتخاب کنید</string>
+    <string name="filealreadyexists">این فایل قبلاً در کمد وجود دارد</string>
+    <string name="exitapp">خروج از برنامه؟</string>
+    <string name="filelocksuccessful">فایل با موفقیت قفل شد.</string>
+    <string name="enablenotificationpermission">برای این کار، مجوز اعلان‌ها را در تنظیمات فعال کنید</string>
+    <string name="toenablelockpermission">برای قفل کردن فایل‌ها به مجوز ذخیره‌سازی نیاز داریم.</string>
+    <string name="doyouwantograntthispermission">آیا مایل هستید این مجوز را بدهید؟</string>
+    <string name="storagepermissionnotgranted">مجوز ذخیره‌سازی داده نشد.</string>
+    <string name="Sure">مطمئنم</string>
+    <string name="tocreateaseamlessexperience">برای تجربه‌ای روان به مجوز اعلان‌ها نیاز داریم.</string>
+    <string name="notificationpermissionnotgranted">مجوز اعلان‌ها داده نشد.</string>
+
+    <!-- locker page history -->
+    <string name="LockedFiles">فایل‌های قفل‌شده</string>
+    <string name="Show">نمایش</string>
+    <string name="pdf">پی‌دی‌اف</string>
+    <string name="doc">مستند</string>
+    <string name="videos">ویدیوها</string>
+    <string name="images">تصاویر</string>
+    <string name="ppt">پی‌تی‌تی</string>
+    <string name="excel">اکسل</string>
+    <string name="audio">صوتی</string>
+    <string name="Allfiles">همه فایل‌ها</string>
+    <string name="unlock">باز کردن</string>
+
+    <!-- inside settings -->
+    <string name="darkMode">حالت تاریک</string>
+    <string name="ChangePin">تغییر پین</string>
+    <string name="LockerGridSize">اندازه شبکه کمد</string>
+    <string name="UnlockHistory">تاریخچه باز کردن</string>
+    <string name="SetLanguage">تنظیم زبان</string>
+
+    <!-- inside change pin -->
+    <string name="EnterPinAgain">پین را دوباره وارد کنید</string>
+    <string name="Typedpin">پین وارد شده: </string>
+    <string name="PinSetSuccessfully">پین با موفقیت تنظیم شد</string>
+    <string name="Enternewpin">پین جدید وارد کنید</string>
+    <string name="Enteroldpin">پین قبلی را وارد کنید</string>
+    <string name="Enteragain">دوباره وارد کنید</string>
+    <string name="Passworddonnotmatch">پین‌ها مطابقت ندارند</string>
+    <string name="pressoktosetnewpin">برای تنظیم پین جدید، تأیید را فشار دهید</string>
+    <string name="reminder">یادآور</string>
+    <string name="settingANewPinWillErase">تنظیم پین جدید باعث حذف فایل‌های قفل‌شده می‌شود.</string>
+    <string name="ForgotPassword">پین خود را فراموش کرده‌اید؟</string>
+    <string name="DataWipedSuccessfully">داده‌ها با موفقیت پاک شدند</string>
+    <string name="ErrorInWipingData">خطا در پاک‌سازی داده‌ها</string>
+    <string name="Failed">ناموفق</string>
+
+    <!-- inside grid size -->
+    <string name="LockerGridsize">اندازه شبکه کمد</string>
+
+    <!-- inside unlock history -->
+    <string name="yourfileunlockhistory">تاریخچه باز شدن فایل‌ها</string>
+    <string name="doyourreallywantto">آیا واقعاً می‌خواهید تاریخچه را پاک کنید؟</string>
+    <string name="alert">هشدار</string>
+    <string name="cancel">لغو</string>
+    <string name="yes">بله</string>
+    <string name="clear">پاک‌سازی</string>
+    <string name="filerestoredsuccessfully">فایل با موفقیت بازیابی شد</string>
+    <string name="itemnotselected">هیچ موردی انتخاب نشده است</string>
+    <string name="Filerestoredat">فایل بازیابی شده در</string>
+
+    <!-- set language option -->
+    <string name="ChooseLanguage">انتخاب زبان</string>
+    <string name="English">انگلیسی</string>
+    <string name="Spanish">اسپانیایی</string>
+    <string name="Arabic">عربی</string>
+
+    <!-- about page -->
+    <string name="coyotefilelocker">کمد فایل کایوت</string>
+    <string name="appDescription">این برنامه به شما کمک می‌کند تا فایل‌های مهم‌تان را از دسترسی دیگران محافظت کنید.</string>
+    <string name="version">نسخه:</string>
+    <string name="madeWithLove">ساخته شده با ❤️ توسط Velocity Labs</string>
+
+    <!-- Notepad -->
+    <string name="newnote">یادداشت جدید</string>
+    <string name="noteheading">عنوان یادداشت</string>
+    <string name="notedetails">جزئیات یادداشت</string>
+    <string name="Savenote">ذخیره یادداشت</string>
+    <string name="notesaved">یادداشت با موفقیت ذخیره شد</string>
+    <string name="areyousure">آیا مطمئن هستید که می‌خواهید این یادداشت را حذف کنید؟</string>
+    <string name="delete">حذف</string>
+    <string name="NoteDeleted">یادداشت حذف شد</string>
+    <string name="heading">لطفاً عنوان را وارد کنید</string>
+    <string name="savedSuccessfully">با موفقیت ذخیره شد</string>
+    <string name="errorsavingnote">خطا در ذخیره یادداشت</string>
+    <string name="noteupdated">یادداشت با موفقیت به‌روزرسانی شد</string>
+    <string name="errorupdating">خطا در به‌روزرسانی</string>
+
+    <!-- Ai tools section -->
+    <string name="documentScanner">اسکنر سند</string>
+    <string name="Scan">اسکن</string>
+
+    <!-- Image Compressor -->
+    <string name="chooseimage">انتخاب تصویر</string>
+    <string name="Compressimage">فشرده‌سازی تصویر</string>
+    <string name="Customcompress">فشرده‌سازی سفارشی</string>
+    <string name="Actualimage">تصویر اصلی</string>
+    <string name="CompressedImage">تصویر فشرده‌شده</string>
+    <string name="Pleasechoose">لطفاً تصویر انتخاب کنید</string>
+    <string name="EnterImageDimension">ابعاد تصویر را وارد کنید</string>
+    <string name="Entersize">اندازه را وارد کنید</string>
+    <string name="size">اندازه:</string>
+    <string name="compressedimagesavedin">تصویر فشرده‌شده در ذخیره شد</string>
+    <string name="EnterimageDimension">ابعاد تصویر را وارد کنید</string>
+    <string name="pleaseentervalid">لطفاً مقادیر معتبر برای عرض، ارتفاع و اندازه وارد کنید</string>
+    <string name="pleaseentervalidsecond">لطفاً عرض و ارتفاع معتبر وارد کنید</string>
+    <string name="pleaseentervalid3">لطفاً اندازه معتبر وارد کنید</string>
+    <string name="failedtoopen">باز کردن تصویر ناموفق بود!</string>
+    <string name="failedtoread">خواندن اطلاعات تصویر ناموفق بود!</string>
+    <string name="failetoclear">پاک‌سازی حافظه پنهان ناموفق بود!</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">خطا در دریافت نقل‌قول</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">بازخورد شما</string>
+    <string name="Subject">موضوع:</string>
+    <string name="EnterSubject">موضوع را وارد کنید</string>
+    <string name="Body">متن:</string>
+    <string name="Emailbody">متن ایمیل را بنویسید</string>
+    <string name="Send">ارسال</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">پشتیبانی و کمک</string>
+    <string name="q1">۱. چگونه پین جدید تنظیم کنم؟</string>
+    <string name="q2">۲. آیا می‌توانم فایل‌های قفل‌شده را به محل اصلی‌شان بازگردانم؟</string>
+    <string name="q3">۳. آیا داده‌های من در کمد امن هستند؟</string>
+    <string name="q4">۴. چه نوع فایل‌هایی پشتیبانی می‌شوند؟</string>
+    <string name="q5">۵. چگونه فایل‌ها را از کمد حذف کنم؟</string>
+    <string name="q6">۶. اگر پین را فراموش کنم چه؟</string>
+    <string name="q1answer">برای تنظیم پین جدید، منوی کناری را باز کرده و روی تنظیمات کلیک کنید.</string>
+    <string name="q2answer">بله، با نگه داشتن طولانی فایل می‌توانید گزینه بازگردانی را بزنید.</string>
+    <string name="q3answer">داده‌های شما در کمد در برابر سایر برنامه‌ها و کاربران بدون پین ایمن هستند.</string>
+    <string name="q4answer">کایوت از انواع jpg، png، pdf، doc و excel پشتیبانی می‌کند.</string>
+    <string name="q5answer">روی فایل موردنظر طولانی ضربه بزنید تا آیکون حذف نمایش داده شود.</string>
+    <string name="q6answer">حداقل ۴ بار تلاش کنید تا کادری برای تنظیم مجدد پین نمایش یابد.</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">اپ Coyote File Locker را دانلود کنید!</string>
+    <string name="checkitout">حتماً امتحانش کنید:</string>
+
+</resources>

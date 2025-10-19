@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorAccent">#232827</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorPrimaryDarkest">#3E2723</color>
+    <color name="lib_key_default_color">#040404</color>
+
+    <!-- quote -->
+    <color name="background_light">#E6E6FA</color> <!-- Lavender -->
+    <color name="card_background">#F8F7F7</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+
+    <color name="purple_500">#6200EE</color>
+
+
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp">
+
+
+        <!-- Title Text -->
+
+        <!--
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Coyote File Locker"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#2E3A59"
+                android:layout_marginBottom="24dp"/>
+
+                -->
+
+        <!-- Password Label -->
+
+        <!--
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Password"
+            android:textSize="16sp"
+            android:textColor="#2E3A59"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+            -->
+
+        <!-- Password Input -->
+
+        <!--
+        <EditText
+            android:id="@+id/text_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColor="#2E3A59"
+            android:padding="12dp" />
+
+            -->
+
+        <TextView
+            android:id="@+id/filetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SelectFile"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select an option."
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+
+        <!-- add RadioGroup which contain the many RadioButton-->
+        <RadioGroup
+
+            android:id="@+id/groupradio"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_image"
+                    android:text="@string/PhotosVideos"
+
+                    android:textSize="20sp"/>
+
+
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_doc"
+                    android:text="@string/Documents"
+
+                    android:textSize="20sp"/>
+
+        </RadioGroup>
+
+
+        <!-- File Selection Label -->
+        <!--
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select File"
+            android:textSize="16sp"
+            android:textColor="#2E3A59"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+        -->
+        <!-- File Name Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/edit_filename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/Filename"
+                android:textSize="16sp"
+                android:textColor="#2E3A59"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:padding="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Browse"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                app:cornerRadius="8dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+
+        <!--<CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete original file"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"/>
+            -->
+
+        <!-- Linear progress indicator -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/lpi"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_encrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lock"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF4081"
+                    app:cornerRadius="8dp"
+                    android:padding="12dp"/>
+
+                <!-- History Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ViewLock"
+                    android:textColor="#EEEFF2"
+                    android:backgroundTint="#003204"
+                    android:padding="12dp"
+                    app:cornerRadius="8dp"/>
+        </LinearLayout>
+
+        <!-- Floating Chatbot Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/chatbot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coyote_icon"
+            android:contentDescription="Chatbot"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:tint="@null"
+            app:maxImageSize="40dp" />
+
+</LinearLayout>
+
+

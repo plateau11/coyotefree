@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@mipmap/coyote2_round"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        />
+
+    <CheckBox android:id="@+id/show_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"/>
+</LinearLayout>
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FBF8"
+    tools:context=".passkey">
+<!--
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/profile_image_dimen"
+        android:layout_height="@dimen/profile_image_dimen"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+        android:src="@mipmap/user_face"
+        tools:ignore="ContentDescription"/>
+-->
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter pin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        />
+-->
+    <com.kevalpatel.passcodeview.PinView
+        android:id="@+id/pin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="86dp"
+        android:layout_marginTop="160dp"
+        app:dividerColor="#A0DCE1"
+        app:fingerprintDefaultText="Scan your finger to unlock application"
+        app:fingerprintEnable="false"
+        app:fingerprintTextColor="#B7D2E1"
+        app:fingerprintTextSize="@dimen/finger_print_text_size"
+        app:titleTextColor="#151414"
+        app:giveTactileFeedback="false"/>
+
+</RelativeLayout>

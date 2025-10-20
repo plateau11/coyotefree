@@ -112,7 +112,7 @@ import com.hbisoft.pickit.PickiTCallbacks;
 public class cryto extends AppCompatActivity implements PickiTCallbacks {
     private BillingClient billingClient;
     private ProductDetails productDetails;
-    private SharedPreferences prefss;
+    private static SharedPreferences prefss;
     private SharedPreferences prefs;
     private static final String PREFS_NAME = "MyAppPrefs";
     private static final String KEY_PREMIUM = "isPremiumUser";
@@ -760,7 +760,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         //---------------------------In app purchase logic (start)--------------------------------------
 
 
-        prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        prefss = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
 
         billingClient = BillingClient.newBuilder(this)
                 .enablePendingPurchases(
@@ -919,7 +919,9 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                 }
 
                 if (id == R.id.quote) {
-                    boolean isPremium = prefs.getBoolean(KEY_PREMIUM, false);
+                    //boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
+                    //SharedPreferences prefss = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                    boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
                     if (isPremium) {
                         startActivity(new Intent(cryto.this, quote.class));
                     } else {
@@ -1200,7 +1202,6 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
             }
         }
     }
-
 
     private void checkIfUserOwnsPremium() {
         billingClient.queryPurchasesAsync(

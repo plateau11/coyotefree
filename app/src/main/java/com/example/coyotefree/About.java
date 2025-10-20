@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -36,7 +34,7 @@ public class About extends AppCompatActivity {
 
         setContentView(R.layout.activity_about);
         TextView versionTextView = findViewById(R.id.app_version);
-        String version = getString(R.string.version)+" 1.1.4" ; // Automatically retrieves app version
+        String version = getString(R.string.version)+" 1.1.5" ; // Automatically retrieves app version
         versionTextView.setText(version);
     }
 

@@ -34,7 +34,7 @@ public class About extends AppCompatActivity {
 
         setContentView(R.layout.activity_about);
         TextView versionTextView = findViewById(R.id.app_version);
-        String version = getString(R.string.version)+" 1.1.7" ; // Automatically retrieves app version
+        String version = getString(R.string.version)+" 1.1.8" ; // Automatically retrieves app version
         versionTextView.setText(version);
     }
 

@@ -16,7 +16,6 @@
         <!-- Moved AppBarLayout to top -->
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/barbackground2"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#D8F2F5">

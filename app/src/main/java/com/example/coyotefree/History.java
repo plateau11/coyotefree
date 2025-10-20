@@ -32,6 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
+import com.android.billingclient.api.BillingFlowParams;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -47,6 +48,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -65,6 +67,11 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 public class History extends AppCompatActivity {
+    //third product (filter section)
+    private static SharedPreferences prefss3;
+    private static final String PREFS_NAME3 = "MyAppPrefs3";
+    private static final String KEY_PREMIUM3 = "isPremiumUser3";
+    private static final String PRODUCT_ID3 = "filter_types";
     public ArrayList<String> unlockfilelist;
     DBHandler2 db2;
     ArrayList<String> dateTimeList;
@@ -603,7 +610,15 @@ public class History extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.option1:  //filter option
-                dialog();
+                BillingManager billingManager = BillingManager.getInstance(History.this);
+                boolean isPremium = billingManager.hasAccess(KEY_PREMIUM3, 3); // For relax_section
+                if (isPremium) {
+                    //startActivity(new Intent(cryto.this, quote.class));
+                    dialog();
+                } else {
+                    billingManager.launchPurchaseFlow(History.this, "filter_types");
+                }
+                //dialog();
                 return true;
             case R.id.option3:   //remove items option
                 if (selectall) {

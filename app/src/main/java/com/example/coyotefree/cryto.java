@@ -110,13 +110,14 @@ import com.hbisoft.pickit.PickiT;
 import com.hbisoft.pickit.PickiTCallbacks;
 
 public class cryto extends AppCompatActivity implements PickiTCallbacks {
-    private BillingClient billingClient;
+    public static BillingClient billingClient;
     private ProductDetails productDetails;
     private SharedPreferences prefs;
 
     //product Details
     private ProductDetails premiumProductDetails;
     private ProductDetails relaxProductDetails;
+    public static ProductDetails filterProductDetails;
 
 
     //first product (quote section)
@@ -789,8 +790,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
 
         //---------------------------In app purchase logic (start)--------------------------------------
 
-
-        prefss = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        /*prefss = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         prefss2 = getSharedPreferences(PREFS_NAME2, MODE_PRIVATE);
         prefss3 = getSharedPreferences(PREFS_NAME3, MODE_PRIVATE);
         prefss4 = getSharedPreferences(PREFS_NAME4, MODE_PRIVATE);
@@ -827,10 +827,8 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                 // Optionally retry connection later
             }
         });
-
-
+        */
         //---------------------------In app purchase logic (end)--------------------------------------
-
 
         //checking the current locale
         Locale currentLocale;
@@ -951,7 +949,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     //Toast.makeText(cryto.this, "Support", Toast.LENGTH_SHORT).show();
                 }
 
-                if (id == R.id.quote) {
+                /*if (id == R.id.quote) {
                     //boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
                     //SharedPreferences prefss = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
                     boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
@@ -973,9 +971,19 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                             Toast.makeText(cryto.this, "Purchase unavailable. Try again later.", Toast.LENGTH_SHORT).show();
                         }
                     }
+                }*/
+
+                if (id == R.id.quote) {
+                    BillingManager billingManager = BillingManager.getInstance(cryto.this);
+                    boolean isPremium = billingManager.hasAccess(KEY_PREMIUM, 1); // For relax_section
+                    if (isPremium) {
+                        startActivity(new Intent(cryto.this, quote.class));
+                    } else {
+                        billingManager.launchPurchaseFlow(cryto.this, "premium_upgrade");
+                    }
                 }
 
-                if (id == R.id.relax) {
+                /*if (id == R.id.relax) {
                     //boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
                     //SharedPreferences prefss = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
                     boolean isPremium = prefss2.getBoolean(KEY_PREMIUM2, false);
@@ -996,6 +1004,16 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                         } else {
                             Toast.makeText(cryto.this, "Purchase unavailable. Try again later.", Toast.LENGTH_SHORT).show();
                         }
+                    }
+                }*/
+
+                if (id == R.id.relax) {
+                    BillingManager billingManager = BillingManager.getInstance(cryto.this);
+                    boolean isPremium = billingManager.hasAccess(KEY_PREMIUM2, 2); // For relax_section
+                    if (isPremium) {
+                        startActivity(new Intent(cryto.this, relax.class));
+                    } else {
+                        billingManager.launchPurchaseFlow(cryto.this, "relax_section");
                     }
                 }
 
@@ -1256,6 +1274,12 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                         .setProductType(BillingClient.ProductType.INAPP)
                         .build()
         );
+        productList.add(
+                QueryProductDetailsParams.Product.newBuilder()
+                        .setProductId("filter_types")
+                        .setProductType(BillingClient.ProductType.INAPP)
+                        .build()
+        );
 
         QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder()
                 .setProductList(productList)
@@ -1273,6 +1297,9 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                                 break;
                             case "relax_section":
                                 relaxProductDetails = details;
+                                break;
+                            case "filter_types":
+                                filterProductDetails = details;
                                 break;
                         }
                     }
@@ -1337,6 +1364,10 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                             prefss2.edit().putBoolean(KEY_PREMIUM2, true).apply();
                             Toast.makeText(this, "🧘 Relax Section Unlocked!", Toast.LENGTH_SHORT).show();
                         }
+                        else if (productId.equals("filter_types")) {
+                            prefss3.edit().putBoolean(KEY_PREMIUM3, true).apply();
+                            Toast.makeText(this, "Filter Unlocked!", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
@@ -1351,6 +1382,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                 (billingResult, purchaseList) -> {
                     boolean hasPremium1 = false;
                     boolean hasPremium2 = false;
+                    boolean hasPremium3 = false;
 
                     for (Purchase purchase : purchaseList) {
                         for (String productId : purchase.getProducts()) {
@@ -1361,6 +1393,10 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                                     purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
                                 hasPremium2 = true;
                             }
+                            else if (productId.equals("filter_types") &&
+                                    purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
+                                hasPremium3 = true;
+                            }
                         }
                     }
                     prefss.edit()
@@ -1368,6 +1404,9 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                             .apply();
                     prefss2.edit()
                             .putBoolean(KEY_PREMIUM2, hasPremium2)
+                            .apply();
+                    prefss3.edit()
+                            .putBoolean(KEY_PREMIUM3, hasPremium3)
                             .apply();
                 }
         );

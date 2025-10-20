@@ -112,11 +112,41 @@ import com.hbisoft.pickit.PickiTCallbacks;
 public class cryto extends AppCompatActivity implements PickiTCallbacks {
     private BillingClient billingClient;
     private ProductDetails productDetails;
-    private static SharedPreferences prefss;
     private SharedPreferences prefs;
+
+    //product Details
+    private ProductDetails premiumProductDetails;
+    private ProductDetails relaxProductDetails;
+
+
+    //first product (quote section)
+    private static SharedPreferences prefss;
     private static final String PREFS_NAME = "MyAppPrefs";
     private static final String KEY_PREMIUM = "isPremiumUser";
     private static final String PRODUCT_ID = "premium_upgrade";
+
+
+    //second product (relax section)
+    private static SharedPreferences prefss2;
+    private static final String PREFS_NAME2 = "MyAppPrefs2";
+    private static final String KEY_PREMIUM2 = "isPremiumUser2";
+    private static final String PRODUCT_ID2 = "relax_section";
+
+
+    //third product (filter section)
+    private static SharedPreferences prefss3;
+    private static final String PREFS_NAME3 = "MyAppPrefs3";
+    private static final String KEY_PREMIUM3 = "isPremiumUser3";
+    private static final String PRODUCT_ID3 = "filter_types";
+
+
+    //fourth product (multiple file section)
+    private static SharedPreferences prefss4;
+    private static final String PREFS_NAME4 = "MyAppPrefs4";
+    private static final String KEY_PREMIUM4 = "isPremiumUser4";
+    private static final String PRODUCT_ID4 = "select_multiplefiles";
+
+
     private static final int UPDATE_REQUEST_CODE = 530;
     private AlertDialog progressDialog;
     File dir;
@@ -761,6 +791,9 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
 
 
         prefss = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        prefss2 = getSharedPreferences(PREFS_NAME2, MODE_PRIVATE);
+        prefss3 = getSharedPreferences(PREFS_NAME3, MODE_PRIVATE);
+        prefss4 = getSharedPreferences(PREFS_NAME4, MODE_PRIVATE);
 
         billingClient = BillingClient.newBuilder(this)
                 .enablePendingPurchases(
@@ -925,12 +958,12 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     if (isPremium) {
                         startActivity(new Intent(cryto.this, quote.class));
                     } else {
-                        if (productDetails != null) {
+                        if (premiumProductDetails != null) {
                             BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
                                     .setProductDetailsParamsList(
                                             Collections.singletonList(
                                                     BillingFlowParams.ProductDetailsParams.newBuilder()
-                                                            .setProductDetails(productDetails)
+                                                            .setProductDetails(premiumProductDetails)
                                                             .build()
                                             )
                                     )
@@ -942,18 +975,37 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     }
                 }
 
-                /*else if (id==R.id.quote) {
-                    Intent intent = new Intent(cryto.this, quote.class);
-                    startActivity(intent);
-                    //Toast.makeText(cryto.this, "Support", Toast.LENGTH_SHORT).show();
-                }*/
+                if (id == R.id.relax) {
+                    //boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);
+                    //SharedPreferences prefss = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                    boolean isPremium = prefss2.getBoolean(KEY_PREMIUM2, false);
+                    if (isPremium) {
+                        startActivity(new Intent(cryto.this, relax.class));
+                    } else {
+                            if (relaxProductDetails != null) {
+                            BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
+                                    .setProductDetailsParamsList(
+                                            Collections.singletonList(
+                                                    BillingFlowParams.ProductDetailsParams.newBuilder()
+                                                            .setProductDetails(relaxProductDetails)
+                                                            .build()
+                                            )
+                                    )
+                                    .build();
+                            billingClient.launchBillingFlow(cryto.this, billingFlowParams);
+                        } else {
+                            Toast.makeText(cryto.this, "Purchase unavailable. Try again later.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
 
+                /*
                 else if (id==R.id.relax) {
                     Intent intent = new Intent(cryto.this, relax.class);
                     startActivity(intent);
                     //Toast.makeText(cryto.this, "Support", Toast.LENGTH_SHORT).show();
                 }
-
+                */
                 else if (id==R.id.rate) {
 
                     String playStoreLink = "https://play.google.com/store/apps/details?id=velocity.labs.coyote"; // Replace with your app's actual link
@@ -1165,6 +1217,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
 
     }
 
+    /*
     private void queryProductDetails() {
         List<QueryProductDetailsParams.Product> productList = new ArrayList<>();
         productList.add(
@@ -1187,7 +1240,50 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
             }
         });
     }
+    */
 
+    private void queryProductDetails() {
+        List<QueryProductDetailsParams.Product> productList = new ArrayList<>();
+        productList.add(
+                QueryProductDetailsParams.Product.newBuilder()
+                        .setProductId("premium_upgrade")
+                        .setProductType(BillingClient.ProductType.INAPP)
+                        .build()
+        );
+        productList.add(
+                QueryProductDetailsParams.Product.newBuilder()
+                        .setProductId("relax_section")
+                        .setProductType(BillingClient.ProductType.INAPP)
+                        .build()
+        );
+
+        QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder()
+                .setProductList(productList)
+                .build();
+
+        billingClient.queryProductDetailsAsync(params, (billingResult, queryProductDetailsResult) -> {
+            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                List<ProductDetails> productDetailsList = queryProductDetailsResult.getProductDetailsList();
+
+                if (productDetailsList != null && !productDetailsList.isEmpty()) {
+                    for (ProductDetails details : productDetailsList) {
+                        switch (details.getProductId()) {
+                            case "premium_upgrade":
+                                premiumProductDetails = details;
+                                break;
+                            case "relax_section":
+                                relaxProductDetails = details;
+                                break;
+                        }
+                    }
+                }
+            } else {
+                Log.e("Billing", "Failed to query product details: " + billingResult.getDebugMessage());
+            }
+        });
+    }
+
+     /*
     private void handlePurchase(Purchase purchase) {
         if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
             if (!purchase.isAcknowledged()) {
@@ -1202,6 +1298,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
             }
         }
     }
+
 
     private void checkIfUserOwnsPremium() {
         billingClient.queryPurchasesAsync(
@@ -1221,7 +1318,60 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                 }
         );
     }
+    */
 
+    private void handlePurchase(Purchase purchase) {
+        if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
+            if (!purchase.isAcknowledged()) {
+                AcknowledgePurchaseParams acknowledgeParams =
+                        AcknowledgePurchaseParams.newBuilder()
+                                .setPurchaseToken(purchase.getPurchaseToken())
+                                .build();
+
+                billingClient.acknowledgePurchase(acknowledgeParams, billingResult -> {
+                    for (String productId : purchase.getProducts()) {
+                        if (productId.equals("premium_upgrade")) {
+                            prefss.edit().putBoolean(KEY_PREMIUM, true).apply();
+                            Toast.makeText(this, "✅ Premium Upgrade Unlocked!", Toast.LENGTH_SHORT).show();
+                        } else if (productId.equals("relax_section")) {
+                            prefss2.edit().putBoolean(KEY_PREMIUM2, true).apply();
+                            Toast.makeText(this, "🧘 Relax Section Unlocked!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        }
+    }
+
+    private void checkIfUserOwnsPremium() {
+        billingClient.queryPurchasesAsync(
+                QueryPurchasesParams.newBuilder()
+                        .setProductType(BillingClient.ProductType.INAPP)
+                        .build(),
+                (billingResult, purchaseList) -> {
+                    boolean hasPremium1 = false;
+                    boolean hasPremium2 = false;
+
+                    for (Purchase purchase : purchaseList) {
+                        for (String productId : purchase.getProducts()) {
+                            if (productId.equals("premium_upgrade") &&
+                                    purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
+                                hasPremium1 = true;
+                            } else if (productId.equals("relax_section") &&
+                                    purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED) {
+                                hasPremium2 = true;
+                            }
+                        }
+                    }
+                    prefss.edit()
+                            .putBoolean(KEY_PREMIUM, hasPremium1)
+                            .apply();
+                    prefss2.edit()
+                            .putBoolean(KEY_PREMIUM2, hasPremium2)
+                            .apply();
+                }
+        );
+    }
 
     private void createNotificationChannel2(String filename) {
         // Create the NotificationChannel, but only on API 26+ because

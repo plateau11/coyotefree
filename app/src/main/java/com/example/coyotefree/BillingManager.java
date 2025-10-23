@@ -33,23 +33,28 @@ public class BillingManager {
     private ProductDetails premiumProductDetails;
     private ProductDetails relaxProductDetails;
     private ProductDetails filterProductDetails;
+    private ProductDetails multipleFileSelectProductDetails;
 
     // 🔹 SharedPreferences for each product
     private final SharedPreferences prefss;
     private final SharedPreferences prefss2;
     private final SharedPreferences prefss3;
+    private final SharedPreferences prefss4;
 
     private static final String PREFS_NAME = "MyAppPrefs";
     private static final String PREFS_NAME2 = "MyAppPrefs2";
     private static final String PREFS_NAME3 = "MyAppPrefs3";
+    private static final String PREFS_NAME4 = "MyAppPrefs4";
 
     private static final String KEY_PREMIUM = "isPremiumUser";
     private static final String KEY_PREMIUM2 = "isPremiumUser2";
     private static final String KEY_PREMIUM3 = "isPremiumUser3";
+    private static final String KEY_PREMIUM4 = "isPremiumUser4";
 
     private static final String PRODUCT_ID = "premium_upgrade";
     private static final String PRODUCT_ID2 = "relax_section";
     private static final String PRODUCT_ID3 = "filter_types";
+    private static final String PRODUCT_ID4 = "select_multiplefiles";
 
     private boolean isConnected = false;
 
@@ -60,6 +65,7 @@ public class BillingManager {
         prefss = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         prefss2 = context.getSharedPreferences(PREFS_NAME2, Context.MODE_PRIVATE);
         prefss3 = context.getSharedPreferences(PREFS_NAME3, Context.MODE_PRIVATE);
+        prefss4 = context.getSharedPreferences(PREFS_NAME4, Context.MODE_PRIVATE);
 
         billingClient = BillingClient.newBuilder(this.context)
                 .enablePendingPurchases(
@@ -121,6 +127,10 @@ public class BillingManager {
                 .setProductId(PRODUCT_ID3)
                 .setProductType(BillingClient.ProductType.INAPP)
                 .build());
+        productList.add(QueryProductDetailsParams.Product.newBuilder()
+                .setProductId(PRODUCT_ID4)
+                .setProductType(BillingClient.ProductType.INAPP)
+                .build());
 
         QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder()
                 .setProductList(productList)
@@ -140,6 +150,9 @@ public class BillingManager {
                                 break;
                             case PRODUCT_ID3:
                                 filterProductDetails = details;
+                                break;
+                            case PRODUCT_ID4:
+                                multipleFileSelectProductDetails = details;
                                 break;
                         }
                     }
@@ -172,6 +185,10 @@ public class BillingManager {
                                 prefss3.edit().putBoolean(KEY_PREMIUM3, true).apply();
                                 Toast.makeText(context, "🔍 Filter Types Unlocked!", Toast.LENGTH_SHORT).show();
                             }
+                            else if (id.equals(PRODUCT_ID4)) {
+                                prefss4.edit().putBoolean(KEY_PREMIUM4, true).apply();
+                                Toast.makeText(context, "Multiple File Select Unlocked!", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
                 });
@@ -186,19 +203,21 @@ public class BillingManager {
                         .setProductType(BillingClient.ProductType.INAPP)
                         .build(),
                 (billingResult, purchaseList) -> {
-                    boolean has1 = false, has2 = false, has3 = false;
+                    boolean has1 = false, has2 = false, has3 = false, has4 = false;
 
                     for (Purchase purchase : purchaseList) {
                         for (String id : purchase.getProducts()) {
                             if (id.equals(PRODUCT_ID)) has1 = true;
                             else if (id.equals(PRODUCT_ID2)) has2 = true;
                             else if (id.equals(PRODUCT_ID3)) has3 = true;
+                            else if (id.equals(PRODUCT_ID4)) has4 = true;
                         }
                     }
 
                     prefss.edit().putBoolean(KEY_PREMIUM, has1).apply();
                     prefss2.edit().putBoolean(KEY_PREMIUM2, has2).apply();
                     prefss3.edit().putBoolean(KEY_PREMIUM3, has3).apply();
+                    prefss4.edit().putBoolean(KEY_PREMIUM4, has4).apply();
                 }
         );
     }
@@ -218,6 +237,8 @@ public class BillingManager {
             selected = relaxProductDetails;
         } else if (productId.equals(PRODUCT_ID3)) {
             selected = filterProductDetails;
+        } else if (productId.equals(PRODUCT_ID4)) {
+            selected = multipleFileSelectProductDetails;
         }
 
         if (selected != null) {
@@ -243,6 +264,8 @@ public class BillingManager {
                 return prefss2.getBoolean(key, false);
             case 3:
                 return prefss3.getBoolean(key, false);
+            case 4:
+                return prefss4.getBoolean(key, false);
             default:
                 return false;
         }

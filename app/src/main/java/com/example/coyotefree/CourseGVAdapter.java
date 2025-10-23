@@ -124,7 +124,6 @@ public class CourseGVAdapter extends ArrayAdapter<CourseModel> {
         /** new security code **/
         SharedPreferences prefs = getContext().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         boolean hasRunBefore = prefs.getBoolean("hasRunBefore", false);
-
         if(!(hasRunBefore))
             text_key = getContext().getString(R.string.text_key);
         else{
@@ -138,7 +137,7 @@ public class CourseGVAdapter extends ArrayAdapter<CourseModel> {
             }
             text_key = second_test;
         }
-        //Toast.makeText(this, "Key final: "+ text_key, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this.getContext(), "Key final adapter: "+ text_key, Toast.LENGTH_SHORT).show();
         /** new security code **/
         String name = courseModel.getFile_name();
         String extension = "";

@@ -102,7 +102,7 @@
             android:name=".termsAndConditions"
             android:exported="false" />
         <activity
-            android:name=".free.About"
+            android:name="About"
             android:exported="false" />
         <activity
             android:name=".Feedback"

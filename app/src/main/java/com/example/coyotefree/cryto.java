@@ -110,9 +110,16 @@ import com.hbisoft.pickit.PickiT;
 import com.hbisoft.pickit.PickiTCallbacks;
 
 public class cryto extends AppCompatActivity implements PickiTCallbacks {
+    CheckBox singleFile;
+    CheckBox multipleFiles;
+    Boolean selectedmultiple;
+    Boolean selectedsingle;
+    ArrayList<String> filesSelected;
+    ArrayList<String> tempNames;
+    int file_select_count;
     public static BillingClient billingClient;
     private ProductDetails productDetails;
-    private SharedPreferences prefs;
+    private static SharedPreferences prefs;
 
     //product Details
     private ProductDetails premiumProductDetails;
@@ -227,6 +234,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         //Toast.makeText(this, "new file name: "+new_filename, Toast.LENGTH_SHORT).show();
         //tempfunc(new_filename);
         cryto.temp_filename = encrypt_dir+"/"+new_filename;
+        tempNames.add(cryto.temp_filename);  //used in run after encrypt function to delete the source files
         FileOutputStream fos = new FileOutputStream(cryto.temp_filename);
         byte[] b = new byte[1024];
         int i = cis.read(b);
@@ -748,42 +756,44 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         else{
             if(dir.mkdirs()) {
                 encrypt_dir = dir.getAbsolutePath();
+                Toast.makeText(this, encrypt_dir, Toast.LENGTH_SHORT).show();
             }else{}
                 //Toast.makeText(this, "Directory creation failed", Toast.LENGTH_SHORT).show();
         }
 
 
         //-------------------------New security update code (start)----------------------------------
-
-        prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         boolean hasRunBefore = prefs.getBoolean("hasRunBefore", false);
-
+        //Toast.makeText(this, "check: "+ hasRunBefore, Toast.LENGTH_SHORT).show();
 
         // When starting your long operation
-        showPleaseWaitDialog();
+        //showPleaseWaitDialog();
 
         // Run your code in background to avoid blocking UI
-        new Thread(() -> {
-
+        //new Thread(() -> {
             //heavyOperation();
-
             if (!hasRunBefore) {
                 //Toast.makeText(this, "Running code for the first time!", Toast.LENGTH_SHORT).show();
                 String secureString = generateSecureString();
                 Boolean resCode = encryptOnceAndStore(secureString);
 
+                //Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
                 // mark as run
-                SharedPreferences.Editor editor = prefs.edit();
+                /*SharedPreferences.Editor editor = prefs.edit();
                 editor.putBoolean("hasRunBefore", true);
-                editor.apply();
+                editor.apply();*/
+
+                //Toast.makeText(this, "test 2", Toast.LENGTH_SHORT).show();
             }
 
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("hasRunBefore", true);
+        editor.apply();
+
             // when finished → hide dialog on UI thread
-            runOnUiThread(this::hidePleaseWaitDialog);
-        }).start();
-
-
-
+            //runOnUiThread(this::hidePleaseWaitDialog);
+        //}).start();
 
         //---------------------------New security update code (end)----------------------------------
 
@@ -829,6 +839,56 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         });
         */
         //---------------------------In app purchase logic (end)--------------------------------------
+
+        //---------------------------check box files section (start)----------------------------------
+
+        singleFile = findViewById(R.id.checkbox_single);
+        multipleFiles = findViewById(R.id.checkbox_multiple);
+        selectedsingle = false;
+        selectedmultiple = false;
+
+        singleFile.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                // Uncheck the other checkbox
+                multipleFiles.setChecked(false);
+                singleFile.setChecked(true);
+                selectedsingle = true;
+                selectedmultiple = false;
+
+                //Your logic for single file mode
+                //Toast.makeText(this, "Single file mode selected", Toast.LENGTH_SHORT).show();
+
+                // Example: Disable multiple file picker
+                // enableSingleFilePicker();
+            } else {
+                // Optional: logic when unchecked
+                // disableSingleFilePicker();
+            }
+        });
+
+        multipleFiles.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                // Uncheck the other checkbox
+                singleFile.setChecked(false);
+                multipleFiles.setChecked(true);
+                selectedsingle = false;
+                selectedmultiple = true;
+
+                //Your logic for multiple files mode
+                //Toast.makeText(this, "Multiple files mode selected", Toast.LENGTH_SHORT).show();
+
+                // Example: Enable multiple file picker
+                // enableMultipleFilePicker();
+            } else {
+                // Optional: logic when unchecked
+                // disableMultipleFilePicker();
+            }
+        });
+
+        //---------------------------check box files section (end)------------------------------------
+
+        filesSelected = new ArrayList<>();
+        tempNames = new ArrayList<>();
 
         //checking the current locale
         Locale currentLocale;
@@ -1064,40 +1124,87 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         browse_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                file_select_count=0;
+                filesSelected.clear();
+                tempNames.clear();
                 if (checkStoragePermissions()) {
                     if(checkNoticationPermission()) {
-                        //Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                        Intent intent;
-                        //Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
-                        //intent.setType();
 
-                        if (filetype == 1) {
-                            errorMessage.setVisibility(View.GONE);
-                            intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                            intent.setType("image/* video/*");
-                            mGetContent.launch(intent);
+                        if(selectedmultiple){ //multiple file select case
+
+                            BillingManager billingManager = BillingManager.getInstance(cryto.this);
+                            boolean isPremium = billingManager.hasAccess(KEY_PREMIUM4, 4); // For relax_section
+                            if (isPremium) {
+                                //startActivity(new Intent(cryto.this, quote.class));
+                                //Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                                Intent intent;
+                                //Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
+                                //intent.setType();
+                                if (filetype == 1) {
+                                    errorMessage.setVisibility(View.GONE);
+                                    intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                                    intent.setType("image/* video/*");
+                                    // Allow multiple selection
+                                    intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                                    mGetContent.launch(intent);
+                                }
+                                //intent.setPackage("com.google.android.apps.nbu.files");
+                                //intent.addCategory(Intent.CATEGORY_OPENABLE);
+                                if (filetype == 2) {
+                                    errorMessage.setVisibility(View.GONE);
+                                /*if(Build.VERSION.SDK_INT==30){
+                                    intent = new Intent(Intent.ACTION_PICK); //stable for version(30)
+                                    mGetContent.launch(intent);
+                                }*/
+                                    //if(!(Build.VERSION.SDK_INT ==30)){
+                                    intent = new Intent(Intent.ACTION_OPEN_DOCUMENT); //stable for all version(29,31)
+                                    intent.setType("*/*");
+                                    // Allow multiple selection
+                                    intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                                    mGetContent.launch(intent);
+                                    //}
+                                }
+                                //mGetContent.launch("*/*");
+                                if (filetype == 0) {
+                                    errorMessage.setVisibility(View.VISIBLE);
+                                }
+                            } else {
+                                billingManager.launchPurchaseFlow(cryto.this, "select_multiplefiles");
+                            }
                         }
 
+                        else{  //single file select case
 
-                        //intent.setPackage("com.google.android.apps.nbu.files");
-                        //intent.addCategory(Intent.CATEGORY_OPENABLE);
-                        if (filetype == 2) {
-                            errorMessage.setVisibility(View.GONE);
-                        /*if(Build.VERSION.SDK_INT==30){
-                            intent = new Intent(Intent.ACTION_PICK); //stable for version(30)
-                            mGetContent.launch(intent);
-                        }*/
-                            //if(!(Build.VERSION.SDK_INT ==30)){
-                            intent = new Intent(Intent.ACTION_OPEN_DOCUMENT); //stable for all version(29,31)
-                            intent.setType("*/*");
-                            mGetContent.launch(intent);
-                            //}
+                                //startActivity(new Intent(cryto.this, quote.class));
+                                //Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                                Intent intent;
+                                //Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
+                                //intent.setType();
+                                if (filetype == 1) {
+                                    errorMessage.setVisibility(View.GONE);
+                                    intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                                    intent.setType("image/* video/*");
+                                    mGetContent.launch(intent);
+                                }
 
-                        }
-                        //mGetContent.launch("*/*");
-                        if (filetype == 0) {
-                            errorMessage.setVisibility(View.VISIBLE);
+                                //intent.setPackage("com.google.android.apps.nbu.files");
+                                //intent.addCategory(Intent.CATEGORY_OPENABLE);
+                                if (filetype == 2) {
+                                    errorMessage.setVisibility(View.GONE);
+                                /*if(Build.VERSION.SDK_INT==30){
+                                    intent = new Intent(Intent.ACTION_PICK); //stable for version(30)
+                                    mGetContent.launch(intent);
+                                }*/
+                                    //if(!(Build.VERSION.SDK_INT ==30)){
+                                    intent = new Intent(Intent.ACTION_OPEN_DOCUMENT); //stable for all version(29,31)
+                                    intent.setType("*/*");
+                                    mGetContent.launch(intent);
+                                    //}
+                                }
+                                //mGetContent.launch("*/*");
+                                if (filetype == 0) {
+                                    errorMessage.setVisibility(View.VISIBLE);
+                                }
                         }
                     }else{
                         dialog5();
@@ -1106,7 +1213,6 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     dialog4();
                 }
             }
-
             });
 
         pdfPickerLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
@@ -1117,25 +1223,50 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
 
         mGetContent = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 result-> {
-                        Intent data = result.getData();
-                        if(data!=null){
-                            Uri uri = data.getData();
-                            if (uri != null) {
-                                pickiT.getPath(uri, Build.VERSION.SDK_INT);
-                                //pickiT.getPath(uri, 30);
+                        if(selectedmultiple){
+                            Intent data = result.getData();
+                            if (data != null) {
+                                if (data.getClipData() != null) {
+                                    // Multiple files selected
+                                    file_select_count = data.getClipData().getItemCount();
+                                    for (int i = 0; i < file_select_count; i++) {
+                                        Uri uri = data.getClipData().getItemAt(i).getUri();
+                                        pickiT.getPath(uri, Build.VERSION.SDK_INT);
+                                    }
+                                } else if (data.getData() != null) {
+                                    // Single file selected
+                                    Uri uri = data.getData();
+                                    pickiT.getPath(uri, Build.VERSION.SDK_INT);
+                                } else {
+                                    // No valid URI
+                                    Toast.makeText(this, getString(R.string.filenotchosen), Toast.LENGTH_SHORT).show();
+                                }
                             } else {
-                                // Handle the case where uri is null
-                                //Log.e("MyApp", "URI is null");
-                                //Toast.makeText(this, "File not chosen", Toast.LENGTH_SHORT).show();
+                                lpi.setVisibility(GONE);
+                                Toast.makeText(this, getString(R.string.filenotchosen), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else{
+                            Intent data = result.getData();
+                            if(data!=null){
+                                Uri uri = data.getData();
+                                if (uri != null) {
+                                    pickiT.getPath(uri, Build.VERSION.SDK_INT);
+                                    //pickiT.getPath(uri, 30);
+                                } else {
+                                    // Handle the case where uri is null
+                                    //Log.e("MyApp", "URI is null");
+                                    //Toast.makeText(this, "File not chosen", Toast.LENGTH_SHORT).show();
+                                    // Show user-friendly message or perform an alternative action
+                                }
+                            }else {
+                                lpi.setVisibility(GONE);
+                                // Handle the case where data is null
+                                Toast.makeText(this, getString(R.string.filenotchosen), Toast.LENGTH_SHORT).show();
                                 // Show user-friendly message or perform an alternative action
                             }
-                        }else {
-                            lpi.setVisibility(GONE);
-                            // Handle the case where data is null
-                            Toast.makeText(this, getString(R.string.filenotchosen), Toast.LENGTH_SHORT).show();
-                            // Show user-friendly message or perform an alternative action
+                            //pickiT.getPath(data.getData(), Build.VERSION.SDK_INT);
                         }
-                        //pickiT.getPath(data.getData(), Build.VERSION.SDK_INT);
                 });
 
         //finalEncrypted_text = shortKey;
@@ -1195,7 +1326,13 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                                        // Simulate background work
                                        try {
                                            //Toast.makeText(cryto.this, "enc: "+filename, Toast.LENGTH_SHORT).show();
-                                           encryptaes(text_key, filename);
+                                           if(selectedmultiple) {
+                                               for (int i = 0; i < filesSelected.size(); i++) {
+                                                   encryptaes(text_key, filesSelected.get(i));
+                                               }
+                                           }else{
+                                                encryptaes(text_key, filename);
+                                           }
                                            //encryptaes(finalEncrypted_text, filename);
                                        } catch (Exception e) {
                                            throw new RuntimeException(e);
@@ -1558,15 +1695,11 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
 
     @Override
     public void PickiTonCompleteListener(String s, boolean b, boolean b1, boolean b2, String s1) {
-        //Toast.makeText(this, "check99", Toast.LENGTH_SHORT).show();
-
         filename = s;
-
+        filesSelected.add(s);  //adding the files to the file select list
         ed = findViewById(R.id.edit_filename);
-
         ed.setText(s);
-
-        boolean exists = processPathAndCheck(filename,"com.example.coyote");
+        boolean exists = processPathAndCheck(filename,"com.example.coyotefree");
         //originalDelete = findViewById(R.id.checkbox_meat);
         if(!exists) {
             //Toast.makeText(this, "present", Toast.LENGTH_SHORT).show();
@@ -1583,16 +1716,29 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
             lpi.setVisibility(GONE);
             //Toast.makeText(cryto.this, getString(R.string.filelocksuccessful), Toast.LENGTH_SHORT).show();
             createNotificationChannel(temp_filename);
-            File originalFile = new File(filename);
-            boolean confirm;
-            confirm = originalFile.delete();
-            if (confirm) {
-                Log.d("deleted", "file deleted");
-            }else {
-                Log.d("not deleted","file not delted");
+            if(!selectedmultiple) {
+                File originalFile = new File(filename);
+                boolean confirm;
+                confirm = originalFile.delete();
+                if (confirm) {
+                    Log.d("deleted", "file deleted");
+                } else {
+                    Log.d("not deleted", "file not deleted");
+                }
+                dbHandler.addNewCourse(cryto.temp_filename, filename);
+            }else{
+                for(int i=0;i<filesSelected.size();i++){
+                    File originalFile = new File(filesSelected.get(i));
+                    boolean confirm;
+                    confirm = originalFile.delete();
+                    if (confirm) {
+                        Log.d("deleted", "file deleted");
+                    } else {
+                        Log.d("not deleted", "file not delted");
+                    }
+                    dbHandler.addNewCourse(tempNames.get(i), filesSelected.get(i));
+                }
             }
-
-            dbHandler.addNewCourse(cryto.temp_filename,filename);
             filename = "";
         } else {
         }
@@ -1602,7 +1748,6 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
     public void PickiTonMultipleCompleteListener(ArrayList<String> arrayList, boolean b, String s) {
 
     }
-
     public boolean checkStoragePermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             //Android is 11 (R) or above
@@ -1615,7 +1760,6 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
             return read == PackageManager.PERMISSION_GRANTED && write == PackageManager.PERMISSION_GRANTED;
         }
     }
-
     private void requestForStoragePermissions() {
         //Android is 11 (R) or above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

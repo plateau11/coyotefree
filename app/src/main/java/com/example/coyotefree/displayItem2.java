@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
@@ -82,7 +83,7 @@ public class displayItem2 extends AppCompatActivity implements ComponentCallback
             }
             text_key = second_test;
         }
-        //Toast.makeText(this, "Key final: "+ text_key, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Key final: "+ text_key, Toast.LENGTH_SHORT).show();
         /** new security code **/
 
         OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
@@ -235,7 +236,6 @@ public class displayItem2 extends AppCompatActivity implements ComponentCallback
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
         return decryptedString;
     }
 }

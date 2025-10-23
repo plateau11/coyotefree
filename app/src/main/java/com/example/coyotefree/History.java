@@ -178,7 +178,6 @@ public class History extends AppCompatActivity {
             fruits[i] = fruits1[i];
         }
 
-
         SharedPreferences gridpreference = getSharedPreferences("gridpreference", MODE_PRIVATE);
         String preference = gridpreference.getString("gpref", "2x2");
         if (preference.equalsIgnoreCase("3x3")) {
@@ -453,7 +452,7 @@ public class History extends AppCompatActivity {
                 ArrayList<String> optionCheck = dbHandler.readOriginalFileLocation();
                 String name2 = optionCheck.get(position);
                 //Toast.makeText(History.this, name2, Toast.LENGTH_SHORT).show();
-                boolean exists = processPathAndCheck(name2, "com.example.coyote");
+                boolean exists = processPathAndCheck(name2, "com.example.coyotefree");
                 if (!exists) {
                     //invalidateOptionsMenu();
                     MenuItem restoreItem = menu.findItem(R.id.restore);

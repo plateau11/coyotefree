@@ -205,8 +205,8 @@ public class SettingsActivity extends AppCompatActivity {
         String preference = langpreference.getString("lpref", "en"); // Use language code
 
         // UI display strings
-        String[] langSizes = {"English", "Spanish", "Arabic", "Farsi", "Japanese", "Turkish", "Nepali", "Telugu", "Kannada","Ukrainian", "Russian"}; // Add more as needed
-        final String[] langCodes = {"en", "es", "ar", "fa", "ja", "tr", "ne", "te", "kn", "uk", "ru"};
+        String[] langSizes = {"English", "Spanish", "Arabic", "Farsi", "Japanese", "Turkish", "Hindi","Nepali", "Telugu", "Kannada","Ukrainian", "Russian"}; // Add more as needed
+        final String[] langCodes = {"en", "es", "ar", "fa", "ja", "tr", "hi", "ne", "te", "kn", "uk", "ru"};
 
         // Determine selected option index
         int selectedIndex = 0;

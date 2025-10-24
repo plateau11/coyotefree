@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu files -->
+    <string name="Settings">सेटिंग्स</string>
+    <string name="About">कोयोट के बारे में</string>
+    <string name="Notepad">नोटपैड</string>
+    <string name="AiTools">एआई उपकरण</string>
+    <string name="ImageSize">छवि का आकार कम करें</string>
+    <string name="Quote">आपका दैनिक उद्धरण</string>
+    <string name="Relax">आराम करें और आनंद लें</string>
+    <string name="Pro">कोयोट प्रो</string>
+    <string name="Feedback">प्रतिक्रिया भेजें</string>
+    <string name="Support">सहायता और समर्थन</string>
+    <string name="share">ऐप साझा करें</string>
+    <string name="rate">हमें रेट करें!</string>
+    <string name="exit">बाहर निकलें</string>
+
+    <string name="PinTitle">पिन दर्ज करें</string>
+
+    <!-- lock page cryto-->
+    <string name="SelectFile">फ़ाइल प्रकार चुनें</string>
+    <string name="PhotosVideos">फोटो/वीडियो</string>
+    <string name="Documents">दस्तावेज़</string>
+    <string name="Browse">ब्राउज़ करें</string>
+    <string name="Lock">लॉक करें</string>
+    <string name="ViewLock">लॉक की गई फ़ाइलें देखें</string>
+    <string name="Filename">फ़ाइल का नाम</string>
+    <string name="filenotchosen">कोई फ़ाइल चयनित नहीं</string>
+    <string name="pleasechooseanother">कृपया कोई दूसरी फ़ाइल चुनें</string>
+    <string name="filealreadyexists">फ़ाइल पहले से लॉकर में मौजूद है</string>
+    <string name="exitapp">क्या आप ऐप से बाहर निकलना चाहते हैं?</string>
+    <string name="filelocksuccessful">फ़ाइल सफलतापूर्वक लॉक की गई।</string>
+    <string name="enablenotificationpermission">सेटिंग्स में अधिसूचना अनुमति सक्षम करें</string>
+    <string name="toenablelockpermission">लॉक संचालन करने के लिए हमें आपके स्टोरेज की अनुमति चाहिए।</string>
+    <string name="doyouwantograntthispermission">क्या आप यह अनुमति देना चाहते हैं?</string>
+    <string name="storagepermissionnotgranted">स्टोरेज अनुमति प्रदान नहीं की गई।</string>
+    <string name="Sure">ज़रूर</string>
+    <string name="tocreateaseamlessexperience">एक सुगम अनुभव के लिए हमें आपकी अधिसूचना अनुमति चाहिए।</string>
+    <string name="notificationpermissionnotgranted">अधिसूचना अनुमति प्रदान नहीं की गई</string>
+
+    <!--locker page history -->
+    <string name="LockedFiles">लॉक की गई फ़ाइलें</string>
+    <string name="Show">दिखाएँ</string>
+    <string name="pdf">पीडीएफ</string>
+    <string name="doc">डॉक</string>
+    <string name="videos">वीडियो</string>
+    <string name="images">छवियाँ</string>
+    <string name="ppt">पीपीटी</string>
+    <string name="excel">एक्सेल</string>
+    <string name="audio">ऑडियो</string>
+    <string name="Allfiles">सभी फ़ाइलें</string>
+    <string name="unlock">अनलॉक करें</string>
+
+    <!--inside setting -->
+    <string name="darkMode">डार्क मोड</string>
+    <string name="ChangePin">पिन बदलें</string>
+    <string name="LockerGridSize">लॉकर ग्रिड आकार</string>
+    <string name="UnlockHistory">अनलॉक इतिहास</string>
+    <string name="SetLanguage">भाषा सेट करें</string>
+
+    <!--inside change pin -->
+    <string name="EnterPinAgain">पिन दोबारा दर्ज करें</string>
+    <string name="Typedpin">दर्ज किया गया पिन:</string>
+    <string name="PinSetSuccessfully">पिन सफलतापूर्वक सेट किया गया</string>
+    <string name="Enternewpin">नया पिन दर्ज करें</string>
+    <string name="Enteroldpin">पुराना पिन दर्ज करें</string>
+    <string name="Enteragain">फिर से दर्ज करें</string>
+    <string name="Passworddonnotmatch">पासवर्ड मेल नहीं खाते</string>
+    <string name="pressoktosetnewpin">नया पिन सेट करने के लिए ओके दबाएँ</string>
+    <string name="reminder">अनुस्मारक</string>
+    <string name="settingANewPinWillErase">नया पिन सेट करने से आपकी लॉक की गई फ़ाइलें मिट जाएँगी।</string>
+    <string name="ForgotPassword">क्या आप पासवर्ड भूल गए?</string>
+    <string name="DataWipedSuccessfully">डेटा सफलतापूर्वक मिटाया गया</string>
+    <string name="ErrorInWipingData">डेटा मिटाने में त्रुटि</string>
+    <string name="Failed">विफल</string>
+
+    <!--inside grid size -->
+    <string name="LockerGridsize">लॉकर ग्रिड आकार</string>
+
+    <!--inside unlock history -->
+    <string name="yourfileunlockhistory">आपकी फ़ाइलों का अनलॉक इतिहास</string>
+    <string name="doyourreallywantto">क्या आप सचमुच अपना अनलॉक इतिहास मिटाना चाहते हैं?</string>
+    <string name="alert">चेतावनी</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="yes">हाँ</string>
+    <string name="clear">साफ़ करें</string>
+    <string name="filerestoredsuccessfully">फ़ाइल सफलतापूर्वक पुनर्स्थापित की गई</string>
+    <string name="itemnotselected">कोई आइटम चयनित नहीं</string>
+    <string name="Filerestoredat">फ़ाइल पुनर्स्थापित की गई स्थान:</string>
+
+    <!--set language option -->
+    <string name="ChooseLanguage">भाषा चुनें</string>
+    <string name="English">अंग्रेज़ी</string>
+    <string name="Spanish">स्पेनिश</string>
+
+    <!--about page -->
+    <string name="coyotefilelocker">कोयोट फ़ाइल लॉकर</string>
+    <string name="appDescription">यह ऐप आपकी महत्वपूर्ण फ़ाइलों को दूसरों से सुरक्षित रखने में मदद करता है।</string>
+    <string name="version">संस्करण:</string>
+    <string name="madeWithLove">❤️ से बनाया गया Velocity Labs द्वारा</string>
+
+    <!--Notepad -->
+    <string name="newnote">नया नोट</string>
+    <string name="noteheading">नोट का शीर्षक</string>
+    <string name="notedetails">नोट का विवरण</string>
+    <string name="Savenote">नोट सहेजें</string>
+    <string name="notesaved">नोट सफलतापूर्वक सहेजा गया</string>
+    <string name="areyousure">क्या आप यह नोट हटाना चाहते हैं?</string>
+    <string name="delete">हटाएँ</string>
+    <string name="NoteDeleted">नोट हटाया गया</string>
+    <string name="heading">कृपया शीर्षक दर्ज करें</string>
+    <string name="savedSuccessfully">नोट सफलतापूर्वक सहेजा गया</string>
+    <string name="errorsavingnote">नोट सहेजने में त्रुटि</string>
+    <string name="noteupdated">नोट सफलतापूर्वक अपडेट किया गया</string>
+    <string name="errorupdating">नोट अपडेट करने में त्रुटि</string>
+
+    <!--Ai tools section -->
+    <string name="documentScanner">दस्तावेज़ स्कैनर</string>
+    <string name="Scan">स्कैन करें</string>
+
+    <!--Image Compressor -->
+    <string name="chooseimage">छवि चुनें</string>
+    <string name="Compressimage">छवि संपीड़ित करें</string>
+    <string name="Customcompress">कस्टम संपीड़न</string>
+    <string name="Actualimage">मूल छवि</string>
+    <string name="CompressedImage">संपीड़ित छवि</string>
+    <string name="Pleasechoose">कृपया एक छवि चुनें</string>
+    <string name="EnterImageDimension">छवि के आयाम दर्ज करें</string>
+    <string name="Entersize">आकार दर्ज करें</string>
+    <string name="size">आकार :</string>
+    <string name="compressedimagesavedin">संपीड़ित छवि यहाँ सहेजी गई:</string>
+    <string name="EnterimageDimension">छवि के आयाम दर्ज करें</string>
+    <string name="pleaseentervalid">कृपया चौड़ाई, ऊँचाई और आकार के लिए मान्य मान दर्ज करें</string>
+    <string name="pleaseentervalidsecond">कृपया मान्य चौड़ाई और ऊँचाई दर्ज करें</string>
+    <string name="pleaseentervalid3">कृपया मान्य आकार दर्ज करें</string>
+    <string name="failedtoopen">छवि खोलने में विफल!</string>
+    <string name="failedtoread">छवि जानकारी पढ़ने में विफल!</string>
+    <string name="failetoclear">कैश साफ़ करने में विफल</string>
+
+    <!-- quotes section -->
+    <string name="failedtofetch">उद्धरण प्राप्त करने में त्रुटि</string>
+
+    <!-- feedback section -->
+    <string name="yourfeedback">आपकी प्रतिक्रिया</string>
+    <string name="Subject">विषय:</string>
+    <string name="EnterSubject">विषय दर्ज करें</string>
+    <string name="Body">संदेश:</string>
+    <string name="Emailbody">ईमेल का विवरण लिखें</string>
+    <string name="Send">भेजें</string>
+
+    <!-- Help & Support section -->
+    <string name="helpandsupport">सहायता और समर्थन</string>
+    <string name="q1">1. नया पिन कैसे सेट करें?</string>
+    <string name="q2">2. क्या मैं लॉकर की फ़ाइलें उनकी मूल स्थिति में पुनर्स्थापित कर सकता हूँ?</string>
+    <string name="q3">3. क्या मेरे डेटा लॉकर में सुरक्षित हैं?</string>
+    <string name="q4">4. लॉकर किन प्रकार की फ़ाइलों को सपोर्ट करता है?</string>
+    <string name="q5">5. लॉकर से फ़ाइलें कैसे हटाएँ?</string>
+    <string name="q6">6. अगर मैं पिन भूल जाऊँ तो क्या होगा?</string>
+    <string name="q1answer">नया पिन सेट करने के लिए साइड नेविगेशन मेनू खोलें और सेटिंग विकल्प पर क्लिक करें।</string>
+    <string name="q2answer">हाँ, आप अपनी फ़ाइल को दबाकर रख सकते हैं, फिर ऊपर की पट्टी में पुनर्स्थापित विकल्प दिखाई देगा।</string>
+    <string name="q3answer">आपका डेटा लॉकर में सुरक्षित है और अन्य ऐप्स या उपयोगकर्ता इसे एक्सेस नहीं कर सकते।</string>
+    <string name="q4answer">कोयोट फ़ाइल लॉकर jpg, png, pdf, doc और excel जैसी फ़ाइलों का समर्थन करता है।</string>
+    <string name="q5answer">जिस फ़ाइल को हटाना चाहते हैं उसे दबाकर रखें। ऊपर हटाने का आइकन दिखाई देगा जिससे फ़ाइल हटाई जा सकती है।</string>
+    <string name="q6answer">कम से कम 4 बार प्रयास करें, उसके बाद एक संवाद बॉक्स दिखाई देगा जहाँ आप नया पिन सेट कर सकते हैं।</string>
+
+    <!-- share app section -->
+    <string name="downloadcoyote">कोयोट फ़ाइल लॉकर डाउनलोड करें!</string>
+    <string name="checkitout">इसे देखें:</string>
+
+</resources>

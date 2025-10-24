@@ -107,6 +107,11 @@ public class quote extends AppCompatActivity {
                     author_new = MyMemoryTranslate.translateText(author,"en","tr");
                 }
 
+                else if (languagePreference.equalsIgnoreCase("hi")){
+                    quote_new = MyMemoryTranslate.translateText(quote,"en","hi");
+                    author_new = MyMemoryTranslate.translateText(author,"en","hi");
+                }
+
                 else if (languagePreference.equalsIgnoreCase("ne")){
                     quote_new = MyMemoryTranslate.translateText(quote,"en","ne");
                     author_new = MyMemoryTranslate.translateText(author,"en","ne");

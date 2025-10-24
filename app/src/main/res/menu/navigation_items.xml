@@ -54,6 +54,11 @@
         android:icon="@drawable/relax1"/>
 
     <item
+        android:id="@+id/pro"
+        android:title="@string/Pro"
+        android:icon="@drawable/premium"/>
+
+    <item
         android:id="@+id/Feedback"
         android:title="@string/Feedback"
         android:icon="@drawable/feedback12"/>

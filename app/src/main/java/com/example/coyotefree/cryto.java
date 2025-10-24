@@ -756,7 +756,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
         else{
             if(dir.mkdirs()) {
                 encrypt_dir = dir.getAbsolutePath();
-                Toast.makeText(this, encrypt_dir, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, encrypt_dir, Toast.LENGTH_SHORT).show();
             }else{}
                 //Toast.makeText(this, "Directory creation failed", Toast.LENGTH_SHORT).show();
         }
@@ -1008,6 +1008,22 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     startActivity(intent);
                     //Toast.makeText(cryto.this, "Support", Toast.LENGTH_SHORT).show();
                 }
+
+                else if (id==R.id.pro) {
+                    String playStoreLink = "https://play.google.com/store/apps/details?id=velocity.labs.coyote"; // Replace with your app's actual link
+
+                    try {
+                        // Open in Play Store app
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=velocity.labs.coyote"));
+                        intent.setPackage("com.android.vending"); // Ensures Play Store app is used
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        // Open in browser if Play Store app is not available
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(playStoreLink));
+                        startActivity(intent);
+                    }
+                }
+
 
                 /*if (id == R.id.quote) {
                     //boolean isPremium = prefss.getBoolean(KEY_PREMIUM, false);

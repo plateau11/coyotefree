@@ -57,3 +57,6 @@
 -dontwarn java.**
 -dontwarn javax.**
 -dontwarn net.**
+
+-dontwarn java.lang.invoke.StringConcatFactory
+-keep class java.lang.invoke.** { *; }

@@ -1,8 +1,6 @@
 plugins {
-
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-
 }
 
 android {
@@ -36,13 +34,14 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true //for code obfuscation
+            minifyEnabled false //for code obfuscation
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
     }
     kotlinOptions {
         jvmTarget = '17'
@@ -50,7 +49,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
@@ -60,15 +58,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.code.gson:gson:2.9.0'
-
     implementation group: 'org.apache.commons', name: 'commons-compress', version: '1.20'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     //implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
     //implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.3'
-
     //implementation 'com.github.plateau11:android-pdf-viewer-fixed:Tag'
-
     implementation 'com.github.plateau11:android-pdf-viewer-fixed:v1.0.9-fixed'
-
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.2'
 }

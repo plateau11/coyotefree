@@ -21,3 +21,5 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class com.ahmadullahpk.alldocumentreader.xs.** { *; }
+-dontwarn java.lang.invoke.StringConcatFactory
+-keep class java.lang.invoke.** { *; }

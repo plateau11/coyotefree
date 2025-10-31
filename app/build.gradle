@@ -37,6 +37,7 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+        coreLibraryDesugaringEnabled true
     }
 
     kotlinOptions {
@@ -100,5 +101,6 @@ dependencies {
     implementation 'com.github.plateau11:android-pdf-viewer-fixed:v1.0.12-fixed'
 
     implementation 'com.android.billingclient:billing:8.0.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.2'
 
 }

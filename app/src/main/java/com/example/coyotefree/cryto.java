@@ -990,7 +990,7 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                     startActivity(intent);
                 } else if (id==R.id.share) {
                     String url = getString(R.string.downloadcoyote)+"\n"+
-                            getString(R.string.checkitout)+"\n\n"+"https://play.google.com/store/apps/details?id=velocity.labs.coyote";
+                            getString(R.string.checkitout)+"\n\n"+"https://play.google.com/store/apps/details?id=velocity.labs.coyotefree";
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                     shareIntent.setType("text/plain");
                     shareIntent.putExtra(Intent.EXTRA_TEXT, url);
@@ -1102,11 +1102,11 @@ public class cryto extends AppCompatActivity implements PickiTCallbacks {
                 */
                 else if (id==R.id.rate) {
 
-                    String playStoreLink = "https://play.google.com/store/apps/details?id=velocity.labs.coyote"; // Replace with your app's actual link
+                    String playStoreLink = "https://play.google.com/store/apps/details?id=velocity.labs.coyotefree"; // Replace with your app's actual link
 
                     try {
                         // Open in Play Store app
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=velocity.labs.coyote"));
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=velocity.labs.coyotefree"));
                         intent.setPackage("com.android.vending"); // Ensures Play Store app is used
                         startActivity(intent);
                     } catch (ActivityNotFoundException e) {

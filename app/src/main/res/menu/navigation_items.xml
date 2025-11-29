@@ -51,7 +51,8 @@
     <item
         android:id="@+id/relax"
         android:title="@string/Relax"
-        android:icon="@drawable/relax1"/>
+        android:icon="@drawable/relax1"
+        android:visible="false"/>
 
     <item
         android:id="@+id/pro"

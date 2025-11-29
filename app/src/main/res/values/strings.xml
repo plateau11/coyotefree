@@ -139,6 +139,7 @@
     <string name="noteheading">Note Heading</string>
     <string name="notedetails">Note Details</string>
     <string name="Savenote">Save Note</string>
+    <string name="Createpdf">Save as pdf !</string>
     <string name="notesaved">Note Saved Successfully</string>
     <string name="areyousure">Are you sure you want to delete this note?</string>
     <string name="delete">Delete</string>

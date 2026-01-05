@@ -43,6 +43,11 @@
 -keep class org.conscrypt.** { *; }
 -keep class org.openjsse.** { *; }
 
+-keep class com.example.coyotefree.** { *; }
+-keep class com.example.coyotefree.PushNotificationService.** { *; }
+
+-keep class org.slf4j.impl.** { *; }
+-keep class org.slf4j.** { *; }
 -keep class com.shockwave.**
 
 -dontwarn org.bouncycastle.**
